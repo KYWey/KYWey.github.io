@@ -19,7 +19,7 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "kyweyCV.pdf", title: "CV", icon: home}
+  - {file: "CV_Kuan-Yu-2025.pdf", title: "CV", icon: home}
   - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
