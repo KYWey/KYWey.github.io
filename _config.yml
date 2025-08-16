@@ -8,18 +8,18 @@ date_format: "%B %d, %Y"
 
 # Layout
 
-show_social: true 
-show_excerpts: false             # show article excerpts instead of archive list on the home page
+show_social: true               # show title description and social links in the footer 
+show_excerpts: false            # show article excerpts instead of archive list on the home page
 show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
-show_minimal: false             # remove all clutter
+# show_minimal: false             # remove all clutter
 
 #show_frame: "/assets/images/background.svg"
 
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "CV_Kuan-Yu-2025.pdf", title: "CV", icon: home}
+  - {title: "CV", file: "CV_Kuan-Yu-2025.pdf"}
   - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
