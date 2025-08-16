@@ -1,6 +1,6 @@
-title: "Kuan-Yu (Wesley) Wey's Personal Website 衛冠瑜個人網站"
-author: "Kuan-Yu Wey"
-description: "Physics PhD Candidate @ University of California - Los Angeles"
+title: "Kuan-Yu Wey"
+author: "Kuan-Yu (Wesley) Wey"
+description: "University of California - Los Angeles"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -12,14 +12,11 @@ show_social: true               # show title description and social links in the
 show_excerpts: false            # show article excerpts instead of archive list on the home page
 show_frame: true                # display a grey frame on large screens
 show_sidebar: false             # show a sidebar instead of the usual header
-# show_minimal: false             # remove all clutter
-
-#show_frame: "/assets/images/background.svg"
 
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {title: "CV", file: "CV_Kuan-Yu-2025.pdf"}
+  - {file: "CV_Kuan-Yu-2025.pdf", title: "CV"}
   - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/"}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
