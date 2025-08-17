@@ -38,7 +38,7 @@ As an innocent kid             |  As a naughty kid
 
 As an innocent kid             |  As a naughty kid
 :-------------------------:|:-------------------------:
-<img src="/Photos/Cooby-2024-12-31.jpg" height="200"/> | <img src="/Photos/Cooby-2025-07-11.jpg" height="200"/>
+<img src="/Photos/Cooby-2024-12-31.jpg" height="300"/> | <img src="/Photos/Cooby-2025-07-11.jpg" height="300"/>
 
 ## Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
