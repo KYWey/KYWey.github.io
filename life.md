@@ -9,6 +9,10 @@
 
 # Sports
 
+<video width="480" autoplay loop muted playsinline>
+  <source src="/Photos/lache+coor.mov" type="video/mp4">
+</video>
+
 # Cooby
 
 # LA Family
