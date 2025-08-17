@@ -15,7 +15,7 @@ Download [CV](CV_Kuan-Yu-2025.pdf)
           text-decoration:none;
           border-radius:6px;
           font-weight:bold;">
-  &#8594 Download CV;
+  &#8594; Download CV
 </a>
   
 ## Research
