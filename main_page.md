@@ -8,7 +8,7 @@ title: ""
 ## Research
 
 I’m a PhD candidate at [Quantum Matter Design Studio](https://sites.google.com/g.ucla.edu/quantum/) in University of California - Los Angeles (UCLA). 
-My research focuses on low-dimensional materials characterization. I specialize using scanning tunnelin microscope (STM) and angular resolved photoemission spectroscopy (ARPES) to probe the surface atomic-resolution image and band structure. My current research topic is **Probing the Atomic-scale Dynamics of a Quasi-1D Charge Density Wave System by in-plane Current-Tuned Scanning Tunneling Microscopy and Spectroscopy (STM/STS)**. The project uses STM ... On the page [STM]("Instrument_intro.md") and [ARPES]() I'm attaching some useful review papers of these instruments and my personal insights (might be just superficial understanding) of them.
+My research focuses on low-dimensional materials characterization. I specialize using scanning tunnelin microscope (STM) and angular resolved photoemission spectroscopy (ARPES) to probe the surface atomic-resolution image and band structure. My current research topic is **Probing the Atomic-scale Dynamics of a Quasi-1D Charge Density Wave System by in-plane Current-Tuned Scanning Tunneling Microscopy and Spectroscopy (STM/STS)**. The project uses STM ... On the page [STM and ARPES]("https://kywey.github.io/Instrument_intro/") I'm attaching some useful review papers of these instruments and my personal insights (might be just superficial understanding) of them.
 
 
 ## Life
@@ -17,18 +17,19 @@ During my spare time, I play table tennis (not professional, but not a rookie), 
 ## Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Main PhD Project</h3>
-  <p>I am a   .</p>
+  <p>Low-dimensional materials</p>
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>PhD Fellowship</h3>
-  <p>I am a   .</p>
+  <p>I have been awarded Julian Schwinger Fellowship from [Julian Schwinger Foundation at UCLA]() since 2021/10 until 2025/09. </p>
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Some Publication</h3>
-  <p>I am a   .</p>
-  <img src="images/battery.png" alt="Battery Example" width="200">
+  <p>J. Green, ...</p>
+  <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. Imaging and Tuning Microscope Phase in a Charge Density Wave.</p>
+  #<img src="images/battery.png" alt="Battery Example" width="200">
 </div>
