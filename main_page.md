@@ -4,6 +4,8 @@ title: ""
 ---
 
 # Hello, my name is Wey, Kuan-Yu (衛冠瑜) - Testing Version1
+
+Download [CV](CV_Kuan-Yu-2025.pdf)
   
 ## Research
 
