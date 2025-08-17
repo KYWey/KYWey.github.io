@@ -23,8 +23,6 @@ As an innocent kid             |  As a naughty kid
 :-------------------------:|:-------------------------:
 ![1](https://github.com/KYWey/KYWey.github.io/blob/master/Photos/Cooby-2024-12-31.jpg)  |  ![2](https://github.com/KYWey/KYWey.github.io/blob/master/Photos/Cooby-2024-12-31.jpg)
 
-https://github.com/KYWey/KYWey.github.io/blob/master/Photos/Cooby-2024-12-31.jpg
-
 ## Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Main PhD Project</h3>
