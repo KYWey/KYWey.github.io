@@ -17,7 +17,7 @@ Download [CV](CV_Kuan-Yu-2025.pdf)
           font-weight:bold;">
   &#8594; Download CV
 </a>
-  
+
 ## Research
 
 I’m a PhD candidate at [Quantum Matter Design Studio](https://sites.google.com/g.ucla.edu/quantum/) in University of California - Los Angeles (UCLA). 
