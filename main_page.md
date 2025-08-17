@@ -15,7 +15,9 @@ On the page [STM and ARPES](https://kywey.github.io/Instrument_intro/) I'm attac
 
 ## Life
 During my spare time, I play table tennis (not professional, but not a rookie), go boulder at climbing gyms (SenderOne Westwood ~V6-V8 levels), or cook (?). Honestly as a PhD student, even though I'm living in one of the most popular city in the world, we don't play too much but study hard (seriously? prob NO). In the past, I was a 50/50 dog/cat person; ever since we had Cooby (literally Cool Baby) as our new family member on 2024/10/17, I'm 100% dog lover. Please go to this [page]() for witnessing Cooby's growing history.
+
 <!-- <img src="Cooby_Photos/Cooby-2024-12-31.jpg" alt="2.5 Months Old!" width="200"> -->
+<!-- <img src="images/battery.png" alt="Battery Example" width="200"> -->
 
 As an innocent kid             |  As a naughty kid
 :-------------------------:|:-------------------------:
@@ -25,7 +27,7 @@ As an innocent kid             |  As a naughty kid
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Main PhD Project</h3>
   <p>Low-dimensional materials</p>
-  <img src="images/battery.png" alt="Battery Example" width="200">
+  
 </div>
 
 <!-- <p>Go to <a href="https://www.google.com">Google</a>.</p> -->
@@ -34,12 +36,10 @@ As an innocent kid             |  As a naughty kid
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>PhD Fellowship</h3>
   <p>I have been awarded Julian Schwinger Fellowship from <a href="https://www.schwingerfellowship.pa.ucla.edu"> Julian Schwinger Foundation at UCLA </a> since 2021/10 until 2025/09. </p>
-  <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Some Publication</h3>
   <p>J. Green, H. W. T. Morgan, ..., K.-Y. Wey, ... et al. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139" > Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg4⁢Sb2 </a> </p>
-  <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. <a href="https://stm25.org/index.php?GP=program/pag" Imaging and Tuning Microscope Phase in a Charge Density Wave. </a> </p>
-  #<img src="images/battery.png" alt="Battery Example" width="200">
+  <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. <a href="https://stm25.org/index.php?GP=program/pag" > Imaging and Tuning Microscope Phase in a Charge Density Wave. </a> </p>
 </div>
