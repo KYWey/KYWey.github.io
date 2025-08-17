@@ -8,7 +8,7 @@ title: ""
 ## Research
 
 I’m a PhD candidate at [Quantum Matter Design Studio](https://sites.google.com/g.ucla.edu/quantum/) in University of California - Los Angeles (UCLA). 
-My research focuses on low-dimensional materials characterization. I specialize using scanning tunnelin microscope (STM) and angular resolved photoemission spectroscopy (ARPES) to probe the surface atomic-resolution image and band structure. My current research topic is **Probing the Atomic-scale Dynamics of a Quasi-1D Charge Density Wave System by in-plane Current-Tuned Scanning Tunneling Microscopy and Spectroscopy (STM/STS)**. The project uses STM ... On the page [STM]("../STM_intro.md") and [ARPES]() I'm attaching some useful review papers of these instruments and my personal insights (might be just superficial understanding) of them.
+My research focuses on low-dimensional materials characterization. I specialize using scanning tunnelin microscope (STM) and angular resolved photoemission spectroscopy (ARPES) to probe the surface atomic-resolution image and band structure. My current research topic is **Probing the Atomic-scale Dynamics of a Quasi-1D Charge Density Wave System by in-plane Current-Tuned Scanning Tunneling Microscopy and Spectroscopy (STM/STS)**. The project uses STM ... On the page [STM]("Instrument_intro.md") and [ARPES]() I'm attaching some useful review papers of these instruments and my personal insights (might be just superficial understanding) of them.
 
 
 ## Life
