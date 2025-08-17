@@ -15,6 +15,7 @@ On the page [STM and ARPES](https://kywey.github.io/Instrument_intro/) I'm attac
 
 ## Life
 During my spare time, I play table tennis (not professional, but not a rookie), go boulder at climbing gyms (SenderOne Westwood ~V6-V8 levels), or cook (?). Honestly as a PhD student, even though I'm living in one of the most popular city in the world, we don't play too much but study hard (seriously? prob NO). In the past, I was a 50/50 dog/cat person; ever since we had Cooby (literally Cool Baby) as our new family member on 2024/10/17, I'm 100% dog lover. Please go to this [page]() for witnessing Cooby's growing history.
+<img src="Cooby_Photos/Cooby-2024-12-31.jpg" alt="2.5 Months Old!" width="200">
 
 ## Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
