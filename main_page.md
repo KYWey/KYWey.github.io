@@ -23,15 +23,18 @@ During my spare time, I play table tennis (not professional, but not a rookie), 
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
+<!-- <p>Go to <a href="https://www.google.com">Google</a>.</p> -->
+<!-- <p><a href="B.md">Go to B page</a></p> -->
+
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>PhD Fellowship</h3>
-  <p>I have been awarded Julian Schwinger [Fellowship]((https://www.schwingerfellowship.pa.ucla.edu/)) from [Julian Schwinger Foundation at UCLA](https://www.schwingerfellowship.pa.ucla.edu/) since 2021/10 until 2025/09. </p>
+  <p>I have been awarded Julian Schwinger Fellowship from <a href="https://www.schwingerfellowship.pa.ucla.edu"> Julian Schwinger Foundation at UCLA </a> since 2021/10 until 2025/09. </p>
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Some Publication</h3>
-  <p>J. Green, H. W. T. Morgan, ..., K.-Y. Wey, ... et al. [Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg4⁢Sb2] (https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139)</p>
+  <p>J. Green, H. W. T. Morgan, ..., K.-Y. Wey, ... et al. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139" > Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg4⁢Sb2 </a> </p>
   <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. [Imaging and Tuning Microscope Phase in a Charge Density Wave.] (https://stm25.org/index.php?GP=program/pag)</p>
   #<img src="images/battery.png" alt="Battery Example" width="200">
 </div>
