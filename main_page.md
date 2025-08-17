@@ -19,7 +19,7 @@ During my spare time, I play table tennis (not professional, but not a rookie), 
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![1]([https://...Dark.png](https://github.com/KYWey/KYWey.github.io/blob/master/Cooby_Photos/Cooby-2024-12-31.jpg))  |  ![2]([https://...Ocean.png](https://github.com/KYWey/KYWey.github.io/blob/master/Cooby_Photos/Cooby-2024-12-31.jpg))
 
 ## Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
