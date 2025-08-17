@@ -6,6 +6,17 @@ title: ""
 # Hello, my name is Wey, Kuan-Yu (衛冠瑜) - Testing Version1
 
 Download [CV](CV_Kuan-Yu-2025.pdf)
+
+<a href="CV_Kuan-Yu-2025.pdf" target="_blank" rel="noopener noreferrer"
+   style="display:inline-block;
+          padding:10px 18px;
+          background:#007acc;
+          color:#fff;
+          text-decoration:none;
+          border-radius:6px;
+          font-weight:bold;">
+  &#8594 Download CV;
+</a>
   
 ## Research
 
