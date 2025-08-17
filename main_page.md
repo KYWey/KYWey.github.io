@@ -40,6 +40,6 @@ As an innocent kid             |  As a naughty kid
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>Some Publication</h3>
-  <p>J. Green, H. W. T. Morgan, ..., K.-Y. Wey, ... et al. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139" > Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg4⁢Sb2 </a> *Physical Review B 111, 085139, 2025* </p>
-  <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. <a href="https://stm25.org/index.php?GP=program/pag" > Imaging and Tuning Microscope Phase in a Charge Density Wave. </a> *IBS Conference on STM'25* </p>
+  <p>J. Green, H. W. T. Morgan, ..., K.-Y. Wey, ... et al. <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139" > Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg4⁢Sb2 </a> <em>Physical Review B 111, 085139, 2025</em> </p>
+  <p>K.-Y. Wey, M. M. Stoba, S. Brown, C. Gutierrez. <a href="https://stm25.org/index.php?GP=program/pag" > Imaging and Tuning Microscope Phase in a Charge Density Wave. </a> <em>IBS Conference on STM'25</em> </p>
 </div> 
