@@ -25,7 +25,7 @@ During my spare time, I play table tennis (not professional, but not a rookie), 
 
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>PhD Fellowship</h3>
-  <p>I have been awarded Julian Schwinger Fellowship from [Julian Schwinger Foundation at UCLA](https://www.schwingerfellowship.pa.ucla.edu/) since 2021/10 until 2025/09. </p>
+  <p>I have been awarded Julian Schwinger [Fellowship]((https://www.schwingerfellowship.pa.ucla.edu/)) from [Julian Schwinger Foundation at UCLA](https://www.schwingerfellowship.pa.ucla.edu/) since 2021/10 until 2025/09. </p>
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
 
