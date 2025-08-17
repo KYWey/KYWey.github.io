@@ -7,7 +7,7 @@ title: ""
 
 Download [CV](CV_Kuan-Yu-2025.pdf)
 
-<a href="CV_Kuan-Yu-2025.pdf" target="_blank" rel="noopener noreferrer"
+<a href="../CV_Kuan-Yu-2025.pdf" target="_blank" rel="noopener noreferrer"
    style="display:inline-block;
           padding:10px 18px;
           background:#007acc;
