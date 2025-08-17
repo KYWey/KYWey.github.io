@@ -17,7 +17,6 @@ During my spare time, I play table tennis (not professional, but not a rookie), 
 ** Selected Projects/Awards/Publication
 <div style="border: 2px solid #ccc; border-radius: 10px; padding: 15px; background-color: #f9f9f9;">
   <h3>About Me</h3>
-  <p>I am a materials scientist at UCLA working on 3D batteries.  
-  I enjoy writing about ceramics, machine learning, and art exhibitions.</p>
+  <p>I am a   .</p>
   <img src="images/battery.png" alt="Battery Example" width="200">
 </div>
