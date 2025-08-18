@@ -43,11 +43,11 @@ Short intro: basically there are indoor/outdoor bouldering (no rope, just climb 
 As considerate and filial (lol) children, my sister and I found that after both of us went aboard to study PhD, my parents would be bored. Plus, our mom always loves dogs but she had to take care of us before. There was no doubt that we should convince our parents to have a pet!!! ok, maybe the only reason to stop them was that our dad was kind of afraid of dogs since during his childhood there were always random fierce dogs around their house. However, the fear went off immediately after he met Cooby &#9829; . They went to the puppy store and didn't hesitate to have Cooby even they just saw his video (how adorable he is!) Both my sister and I were so happe to see our parents with this lovely dog. I was very lucky to have the chance to go back to Taiwan to be with Cooby when he was about two months old and eight months old. Since his coming, we've recorded many many photos and videos of his funny and cute moments. I'm not sure if Cooby agrees with uploading his photos online, but here are some charming photos:
 
 <p float="left">
-  <img src="/Photos/Cooby-salon-1.JPG" width="100" />
-  <img src="/Photos/Cooby-salon-2.JPG" width="100" /> 
-  <img src="/Photos/Cooby-salon-3.JPG" width="100" />
+  <img src="/Photos/Cooby-salon-1.JPG" width="300" />
+  <img src="/Photos/Cooby-salon-2.JPG" width="300" /> 
+  <img src="/Photos/Cooby-salon-3.JPG" width="300" />
 </p>
 
              |   | 
-:-------------------------:|:-------------------------:|:-------------------------:
-<img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.jpg" height="300"/> | <img src="/Photos/Cooby-salon-3.jpg" height="300"/>
+:-------------------------:|:-------------------------:
+<img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.jpg" height="300"/> 
