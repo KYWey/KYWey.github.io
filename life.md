@@ -49,4 +49,4 @@ As considerate and filial (lol) children, my sister and I found that after both 
 </p>
 
 :-------------------------:|:-------------------------:|:-------------------------:
-<img src="/Photos/Cooby-salon-1.jpg" height="300"/> | <img src="/Photos/Cooby-salon-2.jpg" height="300"/> | <img src="/Photos/Cooby-salon-3.jpg" height="300"/>
+<img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.jpg" height="300"/> | <img src="/Photos/Cooby-salon-3.jpg" height="300"/>
