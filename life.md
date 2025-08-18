@@ -50,4 +50,4 @@ As considerate and filial (lol) children, my sister and I found that after both 
 
            A  | B   
 :-------------------------:|:-------------------------:
-<img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.jpg" height="300"/> 
+<img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.JPG" height="300"/> 
