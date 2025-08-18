@@ -48,6 +48,6 @@ As considerate and filial (lol) children, my sister and I found that after both 
   <img src="/Photos/Cooby-salon-3.JPG" width="300" />
 </p>
 
-           A  | B   
+As an innocent kid             |  As a naughty kid   
 :-------------------------:|:-------------------------:
 <img src="/Photos/Cooby-salon-1.JPG" height="300"/> | <img src="/Photos/Cooby-salon-2.JPG" height="300"/> 
