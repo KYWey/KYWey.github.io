@@ -29,10 +29,10 @@ Without the mental support of my lovely close friends aka *family in LA*, I woul
 
 However, on this page I still want to have basic intro to our members and say something to you. Tim and Peter (Wang), as the friends who I already knew in Taiwan, were trustworthy enough such that when I first came to the US I knew I wasn't along. Ok maybe Peter gave me more support then and Tim was only like ... casual(?), or indifferent to anything. Knowing Jane, Tim, and Peter(x2), we held a 18-people party on Sep.14 (ah ha I still remember this date) at Pearl&Karen's apartment - this then brought us the chance to know more people, including Cindy and Amelia. Long story short, thanks to their support from the very first year to this goddamm eternal PhD, I'm still barely surviving.
 
-Notes-1: Peter was smart enought to not study PhD and earned his Master degree after our first year - then he's making money and enjoying life now at Arizona. 
-Notes-2: Then from the second year we introduced our chubby Ben, who is the master of everything.
-Notes-3: Third year, Jessie joined this large family; even though she doesn't live with us (still pretty close), we hang out together really often.
-Notes-4: Ellen is the only one in our group (the messenger chat lol) I missed above, so I'm attaching this sentence here. <3
+- Notes-1: Peter was smart enought to not study PhD and earned his Master degree after our first year - then he's making money and enjoying life now at Arizona. 
+- Notes-2: Then from the second year we introduced our chubby Ben, who is the master of everything.
+- Notes-3: Third year, Jessie joined this large family; even though she doesn't live with us (still pretty close), we hang out together really often.
+- Notes-4: Ellen is the only one in our group (the messenger chat lol) I missed above, so I'm attaching this sentence here. <3
 
 When I graduate if I have the opportuinity, I'd love to say one sentence to each of you (chronological order)
 Tim:
