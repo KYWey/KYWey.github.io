@@ -60,7 +60,7 @@ I joined the [NTU Cocktail Club](https://www.instagram.com/ntucocktailclub/) in 
 
 FirstCocktailWithParents             |  StartUsingNiceLookingGlass    |  TryFancyIngredients |  TryRamosGinFizz
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="/Photos/FirstCocktail.JPG" height="300"/> | <img src="/Photos/PinkLady.JPG" height="300"/> | <img src="/Photos/Mojito.JPG" height="300"/> 
+<img src="/Photos/FirstCocktail.JPG" height="300"/> | <img src="/Photos/PinkLady.JPG" height="300"/> | <img src="/Photos/Mojito.JPG" height="300"/> | <img src="/Photos/Ramos.JPG" height="300"/> 
 
 SoBeautifulCoffeeCocktail             |  [HiShihMing_ft_Mimosa](https://shih-ming.github.io/mypage/)    |  Mint |  DrinkingAlone
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
