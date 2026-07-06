@@ -3,16 +3,55 @@ layout: default
 title: "Home"
 ---
 
+<section class="hero">
+  <div class="monogram">KY</div>
+  <h1>Kuan-Yu&nbsp;(Wesley)&nbsp;Wey</h1>
+  <p class="role">Physics PhD Candidate · UCLA</p>
+  <p class="tagline">I use scanning tunneling microscopy and photoemission spectroscopy to
+  watch electrons and atoms in quantum materials — and I climb, paddle, and hike when I'm off the clock.</p>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="{{ '/about/' | relative_url }}">About Me</a>
+    <a class="btn btn-ghost" href="{{ '/research/' | relative_url }}">My Research</a>
+    <a class="btn btn-ghost" href="{{ '/CV_Kuan-Yu-20260309.pdf' | relative_url }}" target="_blank" rel="noopener">Download CV</a>
+  </div>
+</section>
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer><a class="button" href="{{ post.url | relative_url }}">read more</a></footer>
-    </article>
-  {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+<h2 class="section-title">Explore</h2>
+<div class="card-grid">
+  <a class="card" href="{{ '/about/' | relative_url }}">
+    <span class="card-icon">👋</span>
+    <h3>About Me</h3>
+    <p>Who I am, what I study, and how I spend my time outside the lab.</p>
+    <span class="card-more">Say hello →</span>
+  </a>
+  <a class="card" href="{{ '/research/' | relative_url }}">
+    <span class="card-icon">🔬</span>
+    <h3>Research</h3>
+    <p>A plain-language tour of STM & ARPES, plus what my current project is about.</p>
+    <span class="card-more">Take a look →</span>
+  </a>
+  <a class="card" href="{{ '/fun/' | relative_url }}">
+    <span class="card-icon">🧪</span>
+    <h3>Fun Projects</h3>
+    <p>Everyday physics, dog life with Cooby, and my sporty adventures.</p>
+    <span class="card-more">Have fun →</span>
+  </a>
+  <a class="card" href="https://sites.google.com/g.ucla.edu/quantum/" target="_blank" rel="noopener">
+    <span class="card-icon">🏛️</span>
+    <h3>QMDS Lab</h3>
+    <p>The Quantum Matter Design Studio at UCLA, where I do my work.</p>
+    <span class="card-more">Visit the lab →</span>
+  </a>
+  <a class="card" href="{{ '/CV_Kuan-Yu-20260309.pdf' | relative_url }}" target="_blank" rel="noopener">
+    <span class="card-icon">📄</span>
+    <h3>Curriculum Vitae</h3>
+    <p>My academic background, awards, and publications as a PDF.</p>
+    <span class="card-more">Open CV →</span>
+  </a>
+  <a class="card" href="https://github.com/KYWey" target="_blank" rel="noopener">
+    <span class="card-icon">💻</span>
+    <h3>GitHub</h3>
+    <p>Code, this website, and the occasional side project.</p>
+    <span class="card-more">Follow along →</span>
+  </a>
+</div>

@@ -1,0 +1,265 @@
+/* ============================================================
+   Custom styling for Kuan-Yu (Wesley) Wey's personal site.
+   Layers on top of the "Contrast" Jekyll theme. Plain CSS so
+   Jekyll copies it verbatim (no Sass compilation needed).
+   ============================================================ */
+
+:root {
+  --accent:      #2774AE;   /* UCLA blue   */
+  --accent-2:    #00A6D6;   /* bright cyan */
+  --gold:        #FFB81C;   /* UCLA gold   */
+  --ink:         #1c2430;
+  --muted:       #5b6675;
+  --card-bg:     #ffffff;
+  --card-border: #e6e9ef;
+  --chip-bg:     #eef4fb;
+  --chip-ink:    #24567e;
+  --hero-ink:    #ffffff;
+  --shadow:      0 10px 30px -12px rgba(20, 40, 80, .28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink:         #e9edf3;
+    --muted:       #a7b0c0;
+    --card-bg:     #1b2330;
+    --card-border: #2c374a;
+    --chip-bg:     #1e2c3d;
+    --chip-ink:    #8fc7ee;
+    --shadow:      0 12px 34px -14px rgba(0, 0, 0, .6);
+  }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  padding: 2.6em 1.8em;
+  margin: .4em 0 1.8em;
+  text-align: center;
+  color: var(--hero-ink);
+  background: linear-gradient(135deg, #2774AE 0%, #1b5a91 40%, #00A6D6 100%);
+  box-shadow: var(--shadow);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,.16) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  opacity: .5;
+  pointer-events: none;
+}
+.hero > * { position: relative; z-index: 1; }
+
+.monogram {
+  width: 92px;
+  height: 92px;
+  margin: 0 auto .7em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 2.1em;
+  font-weight: 800;
+  letter-spacing: .02em;
+  color: #1b5a91;
+  background: linear-gradient(135deg, #ffffff, #dcefff);
+  box-shadow: 0 6px 18px -6px rgba(0,0,0,.4), inset 0 0 0 3px rgba(255,255,255,.6);
+}
+
+.hero h1 {
+  font-size: clamp(1.8em, 5vw, 2.6em);
+  margin: .1em 0 .15em;
+  color: #fff;
+  line-height: 1.15;
+}
+.hero .role {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 .2em;
+  color: #eaf6ff;
+}
+.hero .tagline {
+  max-width: 40ch;
+  margin: .2em auto 0;
+  color: #d7ecfb;
+  text-align: center;
+}
+
+/* ---------- Buttons ---------- */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7em;
+  justify-content: center;
+  margin: 1.4em 0 .2em;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5em;
+  padding: .62em 1.2em;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95em;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+  border: 2px solid transparent;
+}
+.btn:hover { transform: translateY(-2px); text-decoration: none; }
+.btn-primary { background: #fff; color: #1b5a91; box-shadow: 0 8px 20px -8px rgba(0,0,0,.45); }
+.btn-primary:hover { background: var(--gold); color: #3a2b00; }
+.btn-ghost { background: rgba(255,255,255,.12); color: #fff; border-color: rgba(255,255,255,.55); }
+.btn-ghost:hover { background: rgba(255,255,255,.22); }
+
+/* Solid accent button for use on normal (non-hero) pages */
+.btn-accent {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  box-shadow: 0 8px 20px -10px rgba(39,116,174,.8);
+}
+.btn-accent:hover { color: #fff; box-shadow: 0 12px 26px -10px rgba(39,116,174,.9); }
+
+/* ---------- Section titles ---------- */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin: 1.8em 0 .8em;
+}
+.section-title::before {
+  content: "";
+  width: .28em;
+  height: 1.1em;
+  border-radius: 3px;
+  background: linear-gradient(var(--accent), var(--accent-2));
+  display: inline-block;
+}
+
+/* ---------- Card grid ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1em;
+  margin: 1.2em 0;
+}
+.card {
+  display: block;
+  padding: 1.3em 1.3em 1.2em;
+  border-radius: 14px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+a.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-2);
+  box-shadow: 0 18px 40px -16px rgba(39,116,174,.5);
+  text-decoration: none;
+}
+.card .card-icon { font-size: 1.9em; line-height: 1; display: block; margin-bottom: .3em; }
+.card h3 { margin: .1em 0 .35em; font-size: 1.15em; }
+.card p { margin: 0; color: var(--muted); text-align: left; font-size: .95em; }
+.card .card-more {
+  display: inline-block;
+  margin-top: .7em;
+  font-weight: 700;
+  color: var(--accent);
+}
+a.card:hover .card-more { color: var(--accent-2); }
+
+/* ---------- Chips / pills ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: .5em; margin: .9em 0; padding: 0; list-style: none; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4em;
+  padding: .38em .85em;
+  border-radius: 999px;
+  background: var(--chip-bg);
+  color: var(--chip-ink);
+  font-weight: 600;
+  font-size: .9em;
+}
+
+/* ---------- Callout / note ---------- */
+.callout {
+  border-left: 4px solid var(--accent-2);
+  background: var(--chip-bg);
+  border-radius: 0 12px 12px 0;
+  padding: .9em 1.2em;
+  margin: 1.3em 0;
+}
+.callout p { margin: .3em 0; }
+
+/* ---------- Instrument feature blocks ---------- */
+.feature {
+  border-radius: 14px;
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+  padding: 1.4em 1.5em;
+  margin: 1.1em 0;
+}
+.feature h3 { margin-top: 0; display: flex; align-items: center; gap: .5em; }
+.feature .tag {
+  font-size: .72em;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  padding: .2em .6em;
+  border-radius: 6px;
+}
+
+/* ---------- Video ---------- */
+.video-wrap {
+  margin: 1.2em 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--card-border);
+  background: #000;
+}
+.video-wrap video { display: block; width: 100%; height: auto; }
+.video-caption { color: var(--muted); font-size: .9em; margin: .5em 0 0; text-align: center; }
+
+/* ---------- Photo grid ---------- */
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: .8em;
+  margin: 1.2em 0;
+}
+.photo-grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0;
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Small helpers ---------- */
+.lead { font-size: 1.12em; color: var(--muted); }
+.center { text-align: center; }
+.wip {
+  display: inline-block;
+  font-size: .75em;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #8a6d00;
+  background: #fff4d1;
+  padding: .25em .7em;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+@media (prefers-color-scheme: dark) {
+  .wip { color: #ffdf8a; background: #3a3007; }
+}

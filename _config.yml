@@ -1,6 +1,6 @@
-title: "Kuan-Yu Wey's Personal Website (Testing)"
+title: "Kuan-Yu (Wesley) Wey"
 author: "Kuan-Yu (Wesley) Wey"
-description: "University of California - Los Angeles"
+description: "Physics PhD candidate · University of California, Los Angeles"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -19,16 +19,15 @@ show_social: true
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {title: "About Me", file: "main_page.md"}
-  - {title: "CV", file: "CV_Kuan-Yu-2025.pdf"}
-  - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/"}
-  - {title: "STM/ARPES", file: "Instrument_intro.md"}
-# url: "https://github.com/KYWey/KYWey.github.io/blob/master/CV_Kuan-Yu-2025.pdf", 
+  - {title: "About Me", url: "/about/", sidebaricon: address-card}
+  - {title: "Research", url: "/research/", sidebaricon: atom}
+  - {title: "Fun Projects", url: "/fun/", sidebaricon: flask}
+  - {title: "CV", url: "/CV_Kuan-Yu-20260309.pdf", sidebaricon: file}
+  - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/", sidebaricon: university}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:wesleywey0717@g.ucla.edu"}
-  - {title: Github, icon: github, url: "https://kywey.github.io"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Github, icon: github, url: "https://github.com/KYWey"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
