@@ -21,7 +21,7 @@ show_social: true
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: "About Me", url: "/about/", sidebaricon: address-card}
   - {title: "Research", url: "/research/", sidebaricon: atom}
-  - {title: "Fun Projects", url: "/fun/", sidebaricon: flask}
+  - {title: "Fun Life", url: "/fun/", sidebaricon: flask}
   - {title: "CV", url: "/CV_Kuan-Yu-20260309.pdf", sidebaricon: file}
   - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/", sidebaricon: university}
 

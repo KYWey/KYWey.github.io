@@ -4,7 +4,7 @@ title: "Pet Life"
 permalink: /fun/pets/
 ---
 
-<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Projects</a></p>
+<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Life</a></p>
 
 # Pet Life: Meet Cooby 🐶
 
@@ -16,26 +16,12 @@ and our mom had always wanted a dog. Even our dad, who was a little afraid of do
 for Cooby the moment he met him. 💙 I was lucky enough to visit home and spend time with Cooby when
 he was about two months and again around eight months old.
 
-<div class="photo-grid">
-  <img src="{{ '/Photos/Cooby-salon-1.JPG' | relative_url }}" alt="Cooby fresh from the salon">
-  <img src="{{ '/Photos/Cooby-salon-2.JPG' | relative_url }}" alt="Cooby looking dapper">
-  <img src="{{ '/Photos/Cooby-salon-3.JPG' | relative_url }}" alt="Cooby posing">
-</div>
+<h2 class="section-title">Cooby's gallery</h2>
 
-<h2 class="section-title">Then &amp; now</h2>
-
-<div class="photo-grid">
-  <figure style="margin:0">
-    <img src="{{ '/Photos/Cooby-2024-12-31.jpg' | relative_url }}" alt="Cooby as an innocent puppy">
-    <figcaption class="video-caption">An innocent puppy (Dec 2024)</figcaption>
-  </figure>
-  <figure style="margin:0">
-    <img src="{{ '/Photos/Cooby-2025-07-11.jpg' | relative_url }}" alt="Cooby as a naughty grown pup">
-    <figcaption class="video-caption">A (slightly) naughty kid (Jul 2025)</figcaption>
-  </figure>
-</div>
+{% include gallery.html folder="/Photos/pet-life" %}
 
 <div class="callout">
-  <p>🐾 More of Cooby's growing-up story — photos, videos, and questionable life choices — is on the
-  way. He hasn't signed off on all of them being posted online yet.</p>
+  <p>🐾 This gallery updates itself — every new photo or video I add to
+  <code>Photos/pet-life/</code> shows up here automatically. More of Cooby's growing-up story is
+  on the way (he hasn't signed off on <em>all</em> of them being posted online yet).</p>
 </div>

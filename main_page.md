@@ -51,7 +51,7 @@ find me being active:
 
 I'm also a proud dog person ever since **Cooby** (literally "Cool Baby") joined the family on
 2024/10/17. You can meet him — and see more of my hobbies — over in
-[Fun Projects →]({{ '/fun/' | relative_url }})
+[Fun Life →]({{ '/fun/' | relative_url }})
 
 ## Selected awards & publications
 

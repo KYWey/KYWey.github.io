@@ -1,10 +1,10 @@
 ---
 layout: page
-title: "Fun Projects"
+title: "Fun Life"
 permalink: /fun/
 ---
 
-# Fun Projects 🧪
+# Fun Life 🧪
 
 <p class="lead">A playground for the things I love beyond my thesis — the physics hiding in
 everyday life, life with my dog Cooby, and my adventures in sport. These pages grow over time,

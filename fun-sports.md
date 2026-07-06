@@ -4,7 +4,7 @@ title: "Sport Life"
 permalink: /fun/sports/
 ---
 
-<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Projects</a></p>
+<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Life</a></p>
 
 # Sport Life 🏓🧗🥾
 
@@ -36,7 +36,11 @@ my evenings and weekends.</p>
   and photos coming soon.</p>
 </div>
 
+<h2 class="section-title">Highlights gallery</h2>
+
+{% include gallery.html folder="/Photos/sport-life" %}
+
 <div class="callout">
-  <p>🚧 I'll be adding photos and highlight clips from all three sports here over time.
-  <a href="mailto:wesleywey0717@g.ucla.edu">Want to train together?</a> Let me know!</p>
+  <p>🚧 This gallery updates itself — new photos and clips added to <code>Photos/sport-life/</code>
+  appear here automatically. <a href="mailto:wesleywey0717@g.ucla.edu">Want to train together?</a> Let me know!</p>
 </div>

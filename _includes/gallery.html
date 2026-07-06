@@ -1,0 +1,39 @@
+{%- comment -%}
+  Auto-listing media gallery.
+  Usage: {% include gallery.html folder="/Photos/pet-life" %}
+  Every image/video dropped into that folder shows up here automatically.
+{%- endcomment -%}
+{%- assign img_exts = "jpg jpeg png gif webp avif svg" | split: " " -%}
+{%- assign vid_exts = "mp4 webm mov m4v ogg" | split: " " -%}
+{%- assign media = site.static_files | where_exp: "f", "f.path contains include.folder" | sort: "name" -%}
+{%- assign count = 0 -%}
+{%- for f in media -%}
+  {%- assign e = f.extname | remove: "." | downcase -%}
+  {%- if img_exts contains e or vid_exts contains e -%}{%- assign count = count | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+{% if count > 0 %}
+<div class="photo-grid">
+{%- for f in media -%}
+  {%- assign e = f.extname | remove: "." | downcase -%}
+  {%- if img_exts contains e -%}
+    <img src="{{ f.path | relative_url }}" alt="{{ f.basename }}" loading="lazy">
+  {%- elsif vid_exts contains e -%}
+    {%- case e -%}
+      {%- when 'mov' -%}{%- assign vt = 'video/quicktime' -%}
+      {%- when 'webm' -%}{%- assign vt = 'video/webm' -%}
+      {%- when 'ogg' -%}{%- assign vt = 'video/ogg' -%}
+      {%- else -%}{%- assign vt = 'video/mp4' -%}
+    {%- endcase -%}
+    <video controls preload="metadata" playsinline>
+      <source src="{{ f.path | relative_url }}" type="{{ vt }}">
+      Your browser can't play this video. <a href="{{ f.path | relative_url }}">Download it here.</a>
+    </video>
+  {%- endif -%}
+{%- endfor -%}
+</div>
+{% else %}
+<div class="callout">
+  <p>📷 Photos and videos are on the way! Anything I drop into
+  <code>{{ include.folder }}/</code> will appear here automatically.</p>
+</div>
+{% endif %}

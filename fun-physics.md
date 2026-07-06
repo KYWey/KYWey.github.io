@@ -4,7 +4,7 @@ title: "Interesting Life Physics"
 permalink: /fun/physics/
 ---
 
-<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Projects</a></p>
+<p><a href="{{ '/fun/' | relative_url }}">← Back to Fun Life</a></p>
 
 # Interesting Life Physics ☕ <span class="wip">Coming soon</span>
 
@@ -34,7 +34,12 @@ A few ideas I want to write up:
   </div>
 </div>
 
+<h2 class="section-title">Gallery</h2>
+
+{% include gallery.html folder="/Photos/life-physics" %}
+
 <div class="callout">
   <p>💬 Have an everyday mystery you'd like me to tackle?
-  <a href="mailto:wesleywey0717@g.ucla.edu">Send it my way</a> and it might become the next post.</p>
+  <a href="mailto:wesleywey0717@g.ucla.edu">Send it my way</a> and it might become the next post.
+  Any photos I add to <code>Photos/life-physics/</code> will show up above automatically.</p>
 </div>
