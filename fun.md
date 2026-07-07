@@ -7,8 +7,8 @@ permalink: /fun/
 # Fun Life 🧪
 
 <p class="lead">A playground for the things I love beyond my thesis — the physics hiding in
-everyday life, life with my dog Cooby, and my adventures in sport. These pages grow over time,
-so check back!</p>
+everyday life, life with my dog Cooby, my adventures in sport, and the occasional glass of wine.
+These pages grow over time, so check back!</p>
 
 <div class="card-grid">
   <a class="card" href="{{ '/fun/physics/' | relative_url }}">
@@ -28,6 +28,12 @@ so check back!</p>
     <h3>Sport Life</h3>
     <p>Table tennis, bouldering, and hitting the trails around LA.</p>
     <span class="card-more">Get moving →</span>
+  </a>
+  <a class="card" href="{{ '/fun/wine/' | relative_url }}">
+    <span class="card-icon">🍷</span>
+    <h3>Wine</h3>
+    <p>A casual scrapbook of wines and cocktails from good times with friends.</p>
+    <span class="card-more">Take a look →</span>
   </a>
 </div>
 

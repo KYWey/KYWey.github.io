@@ -22,6 +22,8 @@ in condensed-matter physics. Here's what they are and what I'm looking for.</p>
   (this mode is called scanning tunneling spectroscopy, or STS).</p>
 </div>
 
+{% include gallery.html folder="/Photos/research/stm" %}
+
 <div class="feature">
   <h3><span class="tag">ARPES</span> Angle-Resolved Photoemission Spectroscopy</h3>
   <p>Here we shine light on the material and knock electrons out of it (the photoelectric effect
@@ -31,6 +33,8 @@ in condensed-matter physics. Here's what they are and what I'm looking for.</p>
   is a photograph in <strong>real space</strong> (where the atoms are), ARPES is the complementary
   photograph in <strong>momentum space</strong> (how the electrons move).</p>
 </div>
+
+{% include gallery.html folder="/Photos/research/arpes" %}
 
 <div class="callout">
   <p>💡 <strong>Why use both?</strong> A single technique only tells half the story. STM shows the
@@ -53,6 +57,8 @@ atom by atom, how this electronic order **shifts, slides, and responds** in real
 tells me how the underlying electronic bands are set up. The goal is to understand how you might
 *tune* and *control* these quantum states, not just observe them.
 
+{% include gallery.html folder="/Photos/research/overview" %}
+
 <h2 class="section-title">Seeing it come together</h2>
 
 <p>The animation below unifies both viewpoints — the real-space, atom-by-atom STM picture and the
@@ -73,4 +79,16 @@ electronic band structure of the material I study.</p>
   <p>📖 I keep a running list of review papers on STM and ARPES (with my own, admittedly still-growing,
   notes and intuitions). If you'd like recommendations to dig deeper, feel free to
   <a href="mailto:wesleywey0717@g.ucla.edu">reach out</a> — I'm always happy to talk shop.</p>
+</div>
+
+<h2 class="section-title">Explore more physics</h2>
+
+<div class="card-grid">
+  <a class="card" href="{{ '/research/related/' | relative_url }}">
+    <span class="card-icon">⚛️</span>
+    <h3>Related Topics</h3>
+    <p>Other corners of condensed matter I find fascinating — different instruments and quantum
+    platforms like semiconductor and superconducting qubits.</p>
+    <span class="card-more">Dive in →</span>
+  </a>
 </div>

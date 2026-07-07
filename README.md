@@ -13,11 +13,14 @@ my CV, and a growing "Fun Life" corner.
 | `index.html` | Home / landing hero (`/`) |
 | `main_page.md` | About Me (`/about/`) |
 | `Instrument_intro.md` | Research: STM & ARPES (`/research/`) |
+| `research-related.md` | Research → Related Topics (`/research/related/`) |
 | `fun.md` | Fun Life hub (`/fun/`) |
 | `fun-physics.md` | Interesting Life Physics (`/fun/physics/`) |
 | `fun-pets.md` | Pet Life — Cooby (`/fun/pets/`) |
 | `fun-sports.md` | Sport Life (`/fun/sports/`) |
-| `CV_Kuan-Yu-20260309.pdf` | CV (linked directly) |
+| `fun-wine.md` | Wine (`/fun/wine/`) |
+| `cv.md` | CV viewer page (`/cv/`) |
+| `CV_Kuan-Yu-20260309.pdf` | CV PDF (embedded + downloadable) |
 | `assets/css/custom.css` | Custom styling on top of the theme |
 
 Navigation and links live in `_config.yml`.

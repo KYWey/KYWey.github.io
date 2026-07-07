@@ -22,12 +22,13 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {title: "About Me", url: "/about/", sidebaricon: address-card}
   - {title: "Research", url: "/research/", sidebaricon: atom}
   - {title: "Fun Life", url: "/fun/", sidebaricon: flask}
-  - {title: "CV", url: "/CV_Kuan-Yu-20260309.pdf", sidebaricon: file}
+  - {title: "CV", url: "/cv/", sidebaricon: file}
   - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/", sidebaricon: university}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:wesleywey0717@g.ucla.edu"}
   - {title: Github, icon: github, url: "https://github.com/KYWey"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/kuan-yu-wey-7062b6305/"}
 
 comments:
 #  disqus_shortname: ""         # see https://disqus.com
