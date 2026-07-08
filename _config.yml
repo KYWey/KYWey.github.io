@@ -36,3 +36,17 @@ comments:
 
 plugins:
  - jekyll-feed
+
+# Collections
+collections:
+  physics:
+    output: true
+    permalink: /fun/physics/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: physics
+    values:
+      layout: physics
+      mathjax: true

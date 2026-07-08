@@ -374,6 +374,26 @@ article.home > :last-child { margin-bottom: auto; }
 .toc-box ol { margin: .4em 0 0; padding-left: 1.3em; }
 .toc-box li { margin: .3em 0; }
 .toc-box a { font-weight: 600; }
+.toc-box .toc-count { color: var(--muted); font-weight: 600; font-size: .9em; }
+
+/* Problem-card "why not / why yes" summary */
+.card .verdict { text-align: left; margin-top: .55em; font-size: .9em; }
+.card .verdict p { margin: .35em 0; color: var(--ink); }
+.verdict .tag-no,
+.verdict .tag-yes {
+  display: inline-block;
+  margin-right: .4em;
+  padding: .08em .5em;
+  border-radius: 5px;
+  font-size: .74em;
+  font-weight: 800;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #fff;
+  vertical-align: baseline;
+}
+.verdict .tag-no { background: #c0392b; }
+.verdict .tag-yes { background: var(--accent); }
 
 /* ---------- Small helpers ---------- */
 .lead { font-size: 1.12em; color: var(--muted); }

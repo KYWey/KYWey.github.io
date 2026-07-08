@@ -1,0 +1,27 @@
+---
+layout: page
+---
+<p><a href="{{ '/fun/physics/' | relative_url }}">← Back to Interesting Life Physics</a></p>
+
+{%- if page.category -%}
+<p class="chips"><span class="chip">{{ page.icon }} {{ page.category }}</span></p>
+{%- endif -%}
+
+{% if page.myth and page.real %}
+<div class="myth-real">
+  <div class="myth"><h4>❌ The popular story</h4><p>{{ page.myth }}</p></div>
+  <div class="real"><h4>✅ What's really true</h4><p>{{ page.real }}</p></div>
+</div>
+{% elsif page.summary %}
+<div class="callout"><p><strong>Quick take —</strong> {{ page.summary }}</p></div>
+{% endif %}
+
+{{ content }}
+
+<hr>
+<p><a href="{{ '/fun/physics/' | relative_url }}">← Back to all Life Physics topics</a></p>
+
+<div class="callout">
+  <p>💬 Have an everyday mystery you'd like me to tackle?
+  <a href="mailto:wesleywey0717@g.ucla.edu">Send it my way</a> and it might become the next entry.</p>
+</div>
