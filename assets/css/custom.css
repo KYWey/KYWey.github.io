@@ -310,6 +310,71 @@ article.home > :last-child { margin-bottom: auto; }
   .photo-grid video { height: 200px; }
 }
 
+/* ---------- Schematic diagrams (fun-physics) ---------- */
+.diagram {
+  margin: 1.3em 0;
+  text-align: center;
+  color: var(--ink);
+}
+.diagram svg {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: var(--chip-bg);
+  border: 1px solid var(--card-border);
+  padding: .7em;
+  box-shadow: var(--shadow);
+}
+.diagram figcaption {
+  color: var(--muted);
+  font-size: .9em;
+  margin-top: .55em;
+  padding: 0 .4em;
+}
+
+/* Myth-vs-reality two-column callouts */
+.myth-real {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .8em;
+  margin: 1.1em 0;
+}
+.myth-real > div {
+  border-radius: 10px;
+  padding: .8em 1em;
+  font-size: .96em;
+}
+.myth-real .myth { background: rgba(192,57,43,.10); border-left: 4px solid #c0392b; }
+.myth-real .real { background: rgba(39,116,174,.12); border-left: 4px solid var(--accent); }
+.myth-real h4 { margin: 0 0 .35em; font-size: .95em; }
+.myth-real p { margin: 0; color: var(--ink); }
+@media (max-width: 40em) { .myth-real { grid-template-columns: 1fr; } }
+
+/* Equation box */
+.eq {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: .55em 1em;
+  margin: .95em 0;
+  overflow-x: auto;
+  text-align: center;
+}
+.eq .eq-note { display: block; color: var(--muted); font-size: .85em; margin-top: .3em; }
+
+/* Table of contents for the physics page */
+.toc-box {
+  border: 1px solid var(--card-border);
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1em 1.3em;
+  margin: 1.2em 0;
+  box-shadow: var(--shadow);
+}
+.toc-box ol { margin: .4em 0 0; padding-left: 1.3em; }
+.toc-box li { margin: .3em 0; }
+.toc-box a { font-weight: 600; }
+
 /* ---------- Small helpers ---------- */
 .lead { font-size: 1.12em; color: var(--muted); }
 .center { text-align: center; }
