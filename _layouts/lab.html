@@ -1,0 +1,22 @@
+---
+layout: page
+---
+<p><a href="{{ '/research/lab/' | relative_url }}">← Back to Inside the Lab</a></p>
+
+{%- if page.category -%}
+<p class="chips"><span class="chip">{{ page.icon }} {{ page.category }}</span></p>
+{%- endif -%}
+
+{% if page.summary %}
+<div class="callout"><p><strong>In one line —</strong> {{ page.summary }}</p></div>
+{% endif %}
+
+{{ content }}
+
+<hr>
+<p><a href="{{ '/research/lab/' | relative_url }}">← Back to all Inside-the-Lab topics</a></p>
+
+<div class="callout">
+  <p>💬 Curious about a corner of the lab I haven't covered yet?
+  <a href="mailto:wesleywey0717@g.ucla.edu">Ask me</a> and I'll write it up.</p>
+</div>

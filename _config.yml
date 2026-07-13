@@ -42,6 +42,9 @@ collections:
   physics:
     output: true
     permalink: /fun/physics/:name/
+  lab:
+    output: true
+    permalink: /research/lab/:name/
 
 defaults:
   - scope:
@@ -49,4 +52,10 @@ defaults:
       type: physics
     values:
       layout: physics
+      mathjax: true
+  - scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
       mathjax: true

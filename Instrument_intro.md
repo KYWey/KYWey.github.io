@@ -81,9 +81,16 @@ electronic band structure of the material I study.</p>
   <a href="mailto:wesleywey0717@g.ucla.edu">reach out</a> — I'm always happy to talk shop.</p>
 </div>
 
-<h2 class="section-title">Explore more physics</h2>
+<h2 class="section-title">Explore more</h2>
 
 <div class="card-grid">
+  <a class="card" href="{{ '/research/lab/' | relative_url }}">
+    <span class="card-icon">🛠️</span>
+    <h3>Inside the Lab</h3>
+    <p>The hands-on engineering behind the images — ultra-high vacuum, cooling to 4 kelvin, and the
+    everyday craft of keeping an STM &amp; ARPES experiment running.</p>
+    <span class="card-more">Go behind the scenes →</span>
+  </a>
   <a class="card" href="{{ '/research/related/' | relative_url }}">
     <span class="card-icon">⚛️</span>
     <h3>Related Topics</h3>
