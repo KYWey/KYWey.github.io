@@ -1,0 +1,671 @@
+# ============================================================
+# LA Food — restaurant database for /fun/food/
+#
+# To add a place: pick a category, add an entry. Cards are
+# automatically sorted by Google rating (highest first).
+#
+# Fields:
+#   name   — restaurant name
+#   emoji  — stands in for the photo until you add one at
+#            Photos/Food/<slugified-name>.jpg (hover a card
+#            banner on the site to see the exact filename)
+#   dish   — the famous thing to order
+#   google — Google Maps rating   (snapshot: July 2026)
+#   yelp   — Yelp rating          (snapshot: July 2026)
+#   price  — $ … $$$$ (Google Maps convention)
+#   area   — neighborhood / local area shown on the card
+#   city   — city used to build the Google Maps / Yelp links
+#   style  — specific style (cafe, bar, seafood, bakery, …)
+#   note   — optional extra line (awards, tips, …)
+# ============================================================
+
+categories:
+  - id: my-favorite
+    title: "My Favorite"
+    icon: "💙"
+    c1: "#2774AE"
+    c2: "#00A6D6"
+    blurb: "The personal hall of fame — places I keep coming back to."
+    entries: []
+
+  - id: taiwanese
+    title: "Taiwanese"
+    icon: "🧋"
+    c1: "#26a69a"
+    c2: "#00695c"
+    blurb: "A taste of home — from SGV breakfast joints to the eastside new wave."
+    entries:
+      - name: "Pine & Crane"
+        emoji: "🍜"
+        dish: "Dan dan noodles & mapo tofu"
+        google: 4.6
+        yelp: 4.4
+        price: "$$"
+        area: "Silver Lake / DTLA"
+        city: "Los Angeles"
+        style: "Modern Taiwanese"
+      - name: "Joy"
+        emoji: "🫓"
+        dish: "Zhua bing (crispy scallion pancake wraps)"
+        google: 4.5
+        yelp: 4.3
+        price: "$$"
+        area: "Highland Park"
+        city: "Los Angeles"
+        style: "Casual Taiwanese"
+      - name: "Huge Tree Pastry"
+        emoji: "🥛"
+        dish: "Salty soy milk + youtiao breakfast"
+        google: 4.5
+        yelp: 4.3
+        price: "$"
+        area: "Monterey Park"
+        city: "Monterey Park"
+        style: "Taiwanese breakfast"
+        note: "Go early — breakfast only (closes ~3pm, closed Wednesdays)."
+      - name: "Din Tai Fung"
+        emoji: "🥟"
+        dish: "Xiao long bao"
+        google: 4.4
+        yelp: 4.0
+        price: "$$"
+        area: "Century City"
+        city: "Los Angeles"
+        style: "Dumpling house"
+        note: "Closest branch to UCLA; also at The Americana in Glendale."
+      - name: "Lu's Garden"
+        emoji: "🍚"
+        dish: "Minced pork rice + porridge with sides"
+        google: 4.3
+        yelp: 4.1
+        price: "$"
+        area: "San Gabriel"
+        city: "San Gabriel"
+        style: "Homestyle Taiwanese"
+
+  - id: chinese
+    title: "Chinese"
+    icon: "🥢"
+    c1: "#e53935"
+    c2: "#8e0000"
+    blurb: "The San Gabriel Valley is a world-class Chinese food destination — these are the heavy hitters."
+    entries:
+      - name: "Bistro Na's"
+        emoji: "🏮"
+        dish: "Imperial-style Na's braised pork & crispy shrimp"
+        google: 4.5
+        yelp: 4.4
+        price: "$$$"
+        area: "Temple City"
+        city: "Temple City"
+        style: "Imperial Beijing"
+        note: "Michelin ⭐ — one of the first Chinese restaurants in the US to get one."
+      - name: "Sichuan Impression"
+        emoji: "🌶️"
+        dish: "Boiled fish in chili broth, leshan chicken"
+        google: 4.4
+        yelp: 4.3
+        price: "$$"
+        area: "Alhambra"
+        city: "Alhambra"
+        style: "Sichuan"
+      - name: "Newport Seafood"
+        emoji: "🦞"
+        dish: "House special lobster"
+        google: 4.4
+        yelp: 4.2
+        price: "$$$"
+        area: "San Gabriel"
+        city: "San Gabriel"
+        style: "Chinese-Vietnamese seafood"
+      - name: "Sea Harbour"
+        emoji: "🥟"
+        dish: "Dim sum (baked BBQ pork buns)"
+        google: 4.3
+        yelp: 4.0
+        price: "$$$"
+        area: "Rosemead"
+        city: "Rosemead"
+        style: "Cantonese dim sum"
+        note: "Weekend dim sum gets busy — arrive before 11am."
+      - name: "Beijing Pie House"
+        emoji: "🥧"
+        dish: "Xian bing (pan-fried meat pies)"
+        google: 4.3
+        yelp: 4.2
+        price: "$"
+        area: "Monterey Park"
+        city: "Monterey Park"
+        style: "Northern Chinese"
+      - name: "Mian"
+        emoji: "🍜"
+        dish: "Chengdu zajiang noodles"
+        google: 4.3
+        yelp: 4.2
+        price: "$"
+        area: "San Gabriel"
+        city: "San Gabriel"
+        style: "Sichuan noodles"
+
+  - id: japanese
+    title: "Japanese"
+    icon: "🍣"
+    c1: "#ec407a"
+    c2: "#ad1457"
+    blurb: "Torrance, Little Tokyo, and Sawtelle — LA's three Japanese food capitals."
+    entries:
+      - name: "Torihei"
+        emoji: "🍢"
+        dish: "Yakitori & oden"
+        google: 4.6
+        yelp: 4.4
+        price: "$$"
+        area: "Torrance"
+        city: "Torrance"
+        style: "Yakitori izakaya"
+      - name: "Sushi Gen"
+        emoji: "🍣"
+        dish: "Lunchtime sashimi special"
+        google: 4.5
+        yelp: 4.3
+        price: "$$$"
+        area: "Little Tokyo (DTLA)"
+        city: "Los Angeles"
+        style: "Sushi / sashimi"
+        note: "Line up before the 11am open for the famous lunch deal."
+      - name: "Marugame Monzo"
+        emoji: "🍲"
+        dish: "Sea urchin cream & mentaiko udon"
+        google: 4.5
+        yelp: 4.3
+        price: "$$"
+        area: "Little Tokyo (DTLA)"
+        city: "Los Angeles"
+        style: "Handmade udon"
+      - name: "Izakaya Hachi"
+        emoji: "🍶"
+        dish: "Grilled beef tongue, pork cheek with yuzu"
+        google: 4.5
+        yelp: 4.3
+        price: "$$"
+        area: "Torrance"
+        city: "Torrance"
+        style: "Izakaya"
+      - name: "Tsujita LA Artisan Noodle"
+        emoji: "🍜"
+        dish: "Tsukemen (dipping ramen)"
+        google: 4.4
+        yelp: 4.2
+        price: "$$"
+        area: "Sawtelle"
+        city: "Los Angeles"
+        style: "Ramen / tsukemen"
+        note: "Annex across the street does the richer bowls — 10 min from UCLA."
+
+  - id: korean
+    title: "Korean"
+    icon: "🥘"
+    c1: "#8e24aa"
+    c2: "#4a148c"
+    blurb: "Koreatown is 15 minutes east and worth every trip."
+    entries:
+      - name: "Park's BBQ"
+        emoji: "🥩"
+        dish: "Beef galbi & pork belly"
+        google: 4.5
+        yelp: 4.3
+        price: "$$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Korean BBQ"
+        note: "The gold standard of KBBQ meat quality in LA."
+      - name: "Hangari Kalguksu"
+        emoji: "🍜"
+        dish: "Kalguksu (knife-cut noodle soup)"
+        google: 4.5
+        yelp: 4.4
+        price: "$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Noodle house"
+      - name: "Sun Nong Dan"
+        emoji: "🍲"
+        dish: "Sizzling galbi jjim with cheese"
+        google: 4.4
+        yelp: 4.2
+        price: "$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Korean stews"
+        note: "Open late — a classic post-midnight move."
+      - name: "Kobawoo House"
+        emoji: "🥬"
+        dish: "Bossam (pork belly wraps)"
+        google: 4.4
+        yelp: 4.2
+        price: "$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Homestyle Korean"
+      - name: "Quarters Korean BBQ"
+        emoji: "🔥"
+        dish: "Beef combo + volcano fried rice"
+        google: 4.4
+        yelp: 4.2
+        price: "$$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Korean BBQ"
+
+  - id: mexican
+    title: "Mexican"
+    icon: "🌮"
+    c1: "#ef6c00"
+    c2: "#bf360c"
+    blurb: "LA's signature cuisine — from street trucks to a Michelin-starred mariscos counter."
+    entries:
+      - name: "Holbox"
+        emoji: "🐙"
+        dish: "Smoked kanpachi tostada, octopus-ink taco"
+        google: 4.7
+        yelp: 4.5
+        price: "$$"
+        area: "Historic South-Central (DTLA)"
+        city: "Los Angeles"
+        style: "Mariscos / seafood"
+        note: "Michelin ⭐ — a seafood counter inside Mercado La Paloma."
+      - name: "Villa's Tacos"
+        emoji: "🌮"
+        dish: "Blue-corn tacos with crispy cheese skirt"
+        google: 4.7
+        yelp: 4.4
+        price: "$"
+        area: "Highland Park"
+        city: "Los Angeles"
+        style: "Taqueria"
+      - name: "Sonoratown"
+        emoji: "🫓"
+        dish: "Caramelo on handmade flour tortillas"
+        google: 4.6
+        yelp: 4.5
+        price: "$"
+        area: "DTLA / Mid-City"
+        city: "Los Angeles"
+        style: "Sonoran taqueria"
+      - name: "Mariscos Jalisco"
+        emoji: "🍤"
+        dish: "Tacos dorados de camarón (fried shrimp tacos)"
+        google: 4.6
+        yelp: 4.5
+        price: "$"
+        area: "Boyle Heights"
+        city: "Los Angeles"
+        style: "Seafood truck"
+        note: "Widely called the best taco in Los Angeles."
+      - name: "Guelaguetza"
+        emoji: "🥘"
+        dish: "Oaxacan moles & tlayudas"
+        google: 4.4
+        yelp: 4.2
+        price: "$$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Oaxacan"
+        note: "James Beard America's Classics winner."
+      - name: "Tacos 1986"
+        emoji: "🌮"
+        dish: "Tijuana-style adobada with all the toppings"
+        google: 4.4
+        yelp: 4.1
+        price: "$"
+        area: "Westwood"
+        city: "Los Angeles"
+        style: "Taqueria"
+        note: "Walking distance from UCLA."
+
+  - id: italian
+    title: "Italian"
+    icon: "🍝"
+    c1: "#7cb342"
+    c2: "#33691e"
+    blurb: "Handmade-pasta country — Venice to the Arts District."
+    entries:
+      - name: "Pasta Sisters"
+        emoji: "🍝"
+        dish: "Pesto trofie & tagliatelle bolognese"
+        google: 4.6
+        yelp: 4.4
+        price: "$$"
+        area: "Culver City"
+        city: "Culver City"
+        style: "Casual pasta counter"
+        note: "Family-run, generous portions, easy on a student budget."
+      - name: "Felix Trattoria"
+        emoji: "🥖"
+        dish: "Sfincione + whatever handmade pasta they're rolling"
+        google: 4.5
+        yelp: 4.2
+        price: "$$$"
+        area: "Venice"
+        city: "Venice"
+        style: "Trattoria"
+        note: "The glass pasta lab in the dining room is the show."
+      - name: "Bestia"
+        emoji: "🥩"
+        dish: "Cavatelli alla norcina & bone marrow"
+        google: 4.5
+        yelp: 4.3
+        price: "$$$"
+        area: "Arts District (DTLA)"
+        city: "Los Angeles"
+        style: "Cal-Italian"
+        note: "Book well ahead — still one of LA's toughest tables."
+      - name: "Uovo"
+        emoji: "🥚"
+        dish: "Tagliolini al limone (pasta flown from Bologna)"
+        google: 4.5
+        yelp: 4.3
+        price: "$$"
+        area: "Santa Monica"
+        city: "Santa Monica"
+        style: "Pasta bar"
+      - name: "Osteria Mozza"
+        emoji: "🧀"
+        dish: "The mozzarella bar & butterscotch budino"
+        google: 4.4
+        yelp: 4.2
+        price: "$$$$"
+        area: "Hancock Park"
+        city: "Los Angeles"
+        style: "Fine-dining osteria"
+        note: "Michelin ⭐ — Nancy Silverton's flagship."
+
+  - id: french
+    title: "French"
+    icon: "🥐"
+    c1: "#5c6bc0"
+    c2: "#283593"
+    blurb: "Butter, bistros, and one very famous pressed duck."
+    entries:
+      - name: "République"
+        emoji: "🥐"
+        dish: "Morning pastries; steak frites at night"
+        google: 4.5
+        yelp: 4.3
+        price: "$$$"
+        area: "Mid-Wilshire"
+        city: "Los Angeles"
+        style: "Bakery + bistro"
+        note: "Go at breakfast for the pastry case — an LA institution."
+      - name: "Pasjoli"
+        emoji: "🦆"
+        dish: "Canard à la presse (pressed duck)"
+        google: 4.5
+        yelp: 4.2
+        price: "$$$$"
+        area: "Santa Monica"
+        city: "Santa Monica"
+        style: "Market bistro"
+        note: "James Beard-winning chef Dave Beran; special-occasion pick."
+      - name: "Petit Trois"
+        emoji: "🥖"
+        dish: "Omelette & the Big Mec double cheeseburger"
+        google: 4.4
+        yelp: 4.0
+        price: "$$$"
+        area: "Hollywood"
+        city: "Los Angeles"
+        style: "Counter bistro"
+
+  - id: thai-sea
+    title: "Thai & Southeast Asian"
+    icon: "🌿"
+    c1: "#f9a825"
+    c2: "#e65100"
+    blurb: "LA has the biggest Thai community outside Thailand — eat accordingly."
+    entries:
+      - name: "Holy Basil"
+        emoji: "🌿"
+        dish: "Boat noodles & drunken noodles"
+        google: 4.7
+        yelp: 4.5
+        price: "$$"
+        area: "Atwater Village / DTLA"
+        city: "Los Angeles"
+        style: "Modern Thai"
+      - name: "Anajak Thai"
+        emoji: "🍛"
+        dish: "Khao soi; Thai Taco Tuesday"
+        google: 4.6
+        yelp: 4.4
+        price: "$$$"
+        area: "Sherman Oaks"
+        city: "Sherman Oaks"
+        style: "Thai / Cal-Thai"
+        note: "James Beard winner — book ahead for Taco Tuesday."
+      - name: "Northern Thai Food Club"
+        emoji: "🍜"
+        dish: "Khao soi (the platonic ideal, ~$11)"
+        google: 4.6
+        yelp: 4.5
+        price: "$"
+        area: "Thai Town"
+        city: "Los Angeles"
+        style: "Northern Thai"
+        note: "Tiny five-table spot — worth the squeeze."
+      - name: "Luv2Eat Thai Bistro"
+        emoji: "🦀"
+        dish: "Phuket-style crab curry"
+        google: 4.4
+        yelp: 4.3
+        price: "$$"
+        area: "Hollywood"
+        city: "Los Angeles"
+        style: "Southern Thai"
+      - name: "Golden Deli"
+        emoji: "🍤"
+        dish: "Cha gio (egg rolls) + pho"
+        google: 4.4
+        yelp: 4.2
+        price: "$"
+        area: "San Gabriel"
+        city: "San Gabriel"
+        style: "Vietnamese"
+
+  - id: american
+    title: "American & Californian"
+    icon: "🍔"
+    c1: "#546e7a"
+    c2: "#263238"
+    blurb: "Burgers, pastrami, and the California-produce school of cooking."
+    entries:
+      - name: "Langer's Delicatessen"
+        emoji: "🥪"
+        dish: "#19 pastrami sandwich"
+        google: 4.6
+        yelp: 4.4
+        price: "$$"
+        area: "Westlake / MacArthur Park"
+        city: "Los Angeles"
+        style: "Jewish deli"
+        note: "Since 1947 — many say better pastrami than New York."
+      - name: "HiHo Cheeseburger"
+        emoji: "🍔"
+        dish: "Wagyu double cheeseburger"
+        google: 4.5
+        yelp: 4.3
+        price: "$"
+        area: "Santa Monica / Mid-Wilshire"
+        city: "Santa Monica"
+        style: "Burgers"
+      - name: "Great White"
+        emoji: "🥑"
+        dish: "Avocado toast, breezy all-day brunch"
+        google: 4.4
+        yelp: 4.2
+        price: "$$"
+        area: "Venice"
+        city: "Venice"
+        style: "All-day cafe"
+      - name: "Gjelina"
+        emoji: "🍕"
+        dish: "Wood-fired pizzas & vegetable plates"
+        google: 4.4
+        yelp: 4.1
+        price: "$$$"
+        area: "Venice"
+        city: "Venice"
+        style: "Californian"
+      - name: "Father's Office"
+        emoji: "🍺"
+        dish: "The Office Burger (no substitutions!)"
+        google: 4.3
+        yelp: 4.0
+        price: "$$"
+        area: "Culver City / Santa Monica"
+        city: "Culver City"
+        style: "Gastropub"
+
+  - id: desserts
+    title: "Desserts"
+    icon: "🍰"
+    c1: "#f48fb1"
+    c2: "#ec407a"
+    blurb: "Bakeries, gelato, bingsu, taiyaki — the post-dinner victory lap."
+    entries:
+      - name: "Porto's Bakery & Cafe"
+        emoji: "🥐"
+        dish: "Potato balls & cheese rolls"
+        google: 4.7
+        yelp: 4.5
+        price: "$"
+        area: "Glendale / Burbank"
+        city: "Glendale"
+        style: "Cuban bakery"
+        note: "An LA rite of passage — the line moves fast, promise."
+      - name: "Wanderlust Creamery"
+        emoji: "🍦"
+        dish: "Ube malted crunch, sticky rice & mango"
+        google: 4.6
+        yelp: 4.4
+        price: "$"
+        area: "Atwater Village + more"
+        city: "Los Angeles"
+        style: "Ice cream"
+      - name: "Gelateria Uli"
+        emoji: "🍧"
+        dish: "Small-batch gelato (black sesame!)"
+        google: 4.6
+        yelp: 4.5
+        price: "$"
+        area: "DTLA"
+        city: "Los Angeles"
+        style: "Gelato"
+      - name: "Salt & Straw"
+        emoji: "🍨"
+        dish: "Honey lavender + rotating weird flavors"
+        google: 4.6
+        yelp: 4.3
+        price: "$"
+        area: "Larchmont / Venice"
+        city: "Los Angeles"
+        style: "Ice cream"
+      - name: "Sul & Beans"
+        emoji: "⛄"
+        dish: "Injeolmi bingsu (Korean shaved ice)"
+        google: 4.4
+        yelp: 4.3
+        price: "$"
+        area: "Koreatown"
+        city: "Los Angeles"
+        style: "Korean dessert cafe"
+      - name: "SomiSomi"
+        emoji: "🐟"
+        dish: "Ah-boong (taiyaki + soft serve)"
+        google: 4.4
+        yelp: 4.2
+        price: "$"
+        area: "Sawtelle / Koreatown"
+        city: "Los Angeles"
+        style: "Soft serve / taiyaki"
+
+  - id: drinks-cafe
+    title: "Coffee & Tea"
+    icon: "☕"
+    c1: "#8d6e63"
+    c2: "#4e342e"
+    blurb: "Caffeine for the lab, boba for the soul."
+    entries:
+      - name: "Endorffeine"
+        emoji: "🧪"
+        dish: "Pour-overs engineered by an ex-biochemist"
+        google: 4.7
+        yelp: 4.6
+        price: "$$"
+        area: "Chinatown"
+        city: "Los Angeles"
+        style: "Specialty coffee"
+        note: "A physicist-approved level of process control."
+      - name: "Maru Coffee"
+        emoji: "☕"
+        dish: "Slow-drip cold brew & cream top"
+        google: 4.5
+        yelp: 4.3
+        price: "$$"
+        area: "Arts District / Los Feliz"
+        city: "Los Angeles"
+        style: "Specialty coffee"
+      - name: "Sunright Tea Studio"
+        emoji: "🧋"
+        dish: "Brown sugar boba — shake 17 times"
+        google: 4.5
+        yelp: 4.4
+        price: "$"
+        area: "Sawtelle + more"
+        city: "Los Angeles"
+        style: "Boba / tea"
+      - name: "Verve Coffee Roasters"
+        emoji: "☕"
+        dish: "Flash cold brew on the patio"
+        google: 4.5
+        yelp: 4.2
+        price: "$$"
+        area: "DTLA / West Hollywood"
+        city: "Los Angeles"
+        style: "Cafe / roaster"
+
+  - id: drinks-bar
+    title: "Bars & Cocktails"
+    icon: "🍸"
+    c1: "#b8860b"
+    c2: "#6d4c00"
+    blurb: "For when the experiment worked (or emphatically didn't)."
+    entries:
+      - name: "Thunderbolt"
+        emoji: "⚡"
+        dish: "P-Town Boxing Club & savory cocktails"
+        google: 4.7
+        yelp: 4.5
+        price: "$$"
+        area: "Historic Filipinotown"
+        city: "Los Angeles"
+        style: "Cocktail bar"
+        note: "On the World's 50 Best discovery list; great Southern bar food."
+      - name: "Everson Royce Bar"
+        emoji: "🍸"
+        dish: "Yo LA Tengo + the E.R.B. burger on the patio"
+        google: 4.6
+        yelp: 4.4
+        price: "$$"
+        area: "Arts District (DTLA)"
+        city: "Los Angeles"
+        style: "Patio bar"
+      - name: "Death & Co"
+        emoji: "🥃"
+        dish: "Deep classic-cocktail menu"
+        google: 4.5
+        yelp: 4.3
+        price: "$$$"
+        area: "Arts District (DTLA)"
+        city: "Los Angeles"
+        style: "Cocktail den"
