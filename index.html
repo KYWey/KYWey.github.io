@@ -1,0 +1,70 @@
+---
+layout: default
+title: "Home"
+---
+
+<article class="about">
+  <header class="post-header">
+    <h1><strong>Kuan-Yu</strong> Wey <span class="zh">衛冠瑜</span></h1>
+    <p class="desc">Physics Ph.D. candidate · Quantum Matter Design Studio<br>
+    UCLA Physics &amp; Astronomy · Los Angeles, CA</p>
+  </header>
+
+  <div class="profile">
+    {%- comment -%} The portrait is Photos/main_page.(jpg|JPG|png); without one, a monogram is shown. {%- endcomment -%}
+    {%- assign portrait = site.static_files | where_exp: "f", "f.path contains '/Photos/main_page.'" | first -%}
+    {%- if portrait -%}
+    <img src="{{ portrait.path | relative_url }}" alt="Kuan-Yu Wey">
+    {%- else -%}
+    <div class="monogram">KY</div>
+    {%- endif -%}
+    <div class="more-info">
+      <p>Photo taken at Texas Canyon</p>
+    </div>
+  </div>
+
+  <div class="bio">
+    <p>I am a Ph.D. candidate in Physics at the University of California, Los Angeles (UCLA), working in the
+    <a href="https://sites.google.com/g.ucla.edu/quantum/" target="_blank" rel="noopener">Quantum Matter Design Studio (QMDS)</a>
+    with Dr. Christopher Gutiérrez. I use scanning tunneling microscopy (STM) and angle-resolved photoemission
+    spectroscopy (ARPES) to image — and control — how electrons organize themselves in low-dimensional quantum
+    materials. My thesis is on imaging and controlling microscopic charge density waves, using <em>in situ</em>
+    tuning knobs such as in-plane electric fields and strain.</p>
+
+    <p>Before UCLA, I received my B.S. in Physics from National Taiwan University. Along the way I've come to
+    enjoy the engineering side of experiments as much as the physics: ultra-high vacuum, cryogenics, and Python
+    pipelines for instrument control and image analysis. Off the clock I play table tennis, boulder, and hike.</p>
+  </div>
+
+  <h2 class="home-heading">News</h2>
+  <div class="news">
+    <table>
+      {%- for item in site.data.news -%}
+      <tr>
+        <th scope="row">{{ item.date }}</th>
+        <td>{{ item.text | markdownify | remove: "<p>" | remove: "</p>" }}</td>
+      </tr>
+      {%- endfor -%}
+    </table>
+  </div>
+
+  <h2 class="home-heading">Selected Publications</h2>
+  <ol class="pubs">
+    {%- for p in site.data.publications -%}
+    {%- if p.selected == false -%}{%- continue -%}{%- endif -%}
+    <li>
+      <span class="pub-abbr{% unless p.url %} pending{% endunless %}">{{ p.abbr }}</span>
+      <div class="pub-body">
+        <div class="pub-title">{{ p.title }}</div>
+        <div class="pub-authors">{{ p.authors | replace: "K.-Y. Wey", "<em>K.-Y. Wey</em>" }}</div>
+        <div class="pub-venue">{{ p.venue }}</div>
+        <div class="pub-note">{{ p.note }}</div>
+        {%- if p.url -%}
+        <a class="pub-link" href="{{ p.url }}" target="_blank" rel="noopener">{{ p.link | default: "DOI" }}</a>
+        {%- endif -%}
+      </div>
+    </li>
+    {%- endfor -%}
+  </ol>
+  <p class="pubs-more">Full list, talks, and awards are in my <a href="{{ '/cv/' | relative_url }}">CV</a>.</p>
+</article>

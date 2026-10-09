@@ -1,0 +1,49 @@
+{%- comment -%}
+  Auto-listing media gallery.
+  Usage: {% include gallery.html folder="/Photos/pet-life" %}
+  Every image/video dropped into that folder shows up here automatically.
+  Renders nothing while the folder is empty. Optional heading="..." adds a section
+  title that only appears once there is media to show.
+  Optional layout="row" puts the photos side by side at one shared height (widths differ).
+  Captions are optional: add "File_Name.jpg: caption" to _data/captions.yml.
+{%- endcomment -%}
+{%- assign img_exts = "jpg jpeg png gif webp avif svg" | split: " " -%}
+{%- assign vid_exts = "mp4 webm mov m4v ogg" | split: " " -%}
+{%- assign media = site.static_files | where_exp: "f", "f.path contains include.folder" | sort: "name" -%}
+{%- assign count = 0 -%}
+{%- for f in media -%}
+  {%- assign e = f.extname | remove: "." | downcase -%}
+  {%- if img_exts contains e or vid_exts contains e -%}{%- assign count = count | plus: 1 -%}{%- endif -%}
+{%- endfor -%}
+{% if count > 0 %}
+{%- if include.heading %}
+<h2 class="section-title">{{ include.heading }}</h2>
+{% endif -%}
+<div class="{% if include.layout == 'row' %}photo-row{% else %}photo-grid{% if count < 3 %} photo-grid-{{ count }}{% endif %}{% endif %}">
+{%- for f in media -%}
+  {%- assign e = f.extname | remove: "." | downcase -%}
+  {%- if img_exts contains e -%}
+    {%- assign cap = site.data.captions[f.name] -%}
+    {%- if cap -%}
+    <figure>
+      <img src="{{ f.path | relative_url }}" alt="{{ cap | escape }}" loading="lazy">
+      <figcaption>{{ cap }}</figcaption>
+    </figure>
+    {%- else -%}
+    <img src="{{ f.path | relative_url }}" alt="{{ f.basename }}" loading="lazy">
+    {%- endif -%}
+  {%- elsif vid_exts contains e -%}
+    {%- case e -%}
+      {%- when 'mov' -%}{%- assign vt = 'video/quicktime' -%}
+      {%- when 'webm' -%}{%- assign vt = 'video/webm' -%}
+      {%- when 'ogg' -%}{%- assign vt = 'video/ogg' -%}
+      {%- else -%}{%- assign vt = 'video/mp4' -%}
+    {%- endcase -%}
+    <video controls preload="metadata" playsinline>
+      <source src="{{ f.path | relative_url }}" type="{{ vt }}">
+      Your browser can't play this video. <a href="{{ f.path | relative_url }}">Download it here.</a>
+    </video>
+  {%- endif -%}
+{%- endfor -%}
+</div>
+{% endif %}

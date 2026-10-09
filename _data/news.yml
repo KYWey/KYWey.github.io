@@ -1,0 +1,22 @@
+# ------------------------------------------------------------
+# News — shown on the homepage, in the order listed (newest first).
+# Add a new entry at the top:
+#   - date: "Mon YYYY"      (free text, shown as-is)
+#     text: "What happened" (Markdown links are fine)
+# ------------------------------------------------------------
+- date: "Mar 2026"
+  text: "Gave an oral talk at the **APS Global Physics Summit 2026** in Denver."
+- date: "Jun 2025"
+  text: "Awarded the **Government Scholarship to Study Abroad** from Taiwan (2025 – 2027)."
+- date: "2025"
+  text: "Gave an oral talk, *Imaging and Tuning Microscopic Phase in a Charge Density Wave*, at the [IBS Conference on STM '25](https://stm25.org/index.php?GP=program/pag) in Seoul, Korea."
+- date: "Mar 2025"
+  text: "Gave an oral talk at the **APS Global Physics Summit 2025** in Anaheim."
+- date: "2025"
+  text: "Our paper on the 3D fermiology of the triangular lattice magnet EuAg₄Sb₂ is published in [*Physical Review B*](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139)."
+- date: "Dec 2024"
+  text: "**PyAtoms**, our interactive tool for simulating atomic STM images, is on [arXiv](https://arxiv.org/abs/2412.18332)."
+- date: "Jun 2024"
+  text: "Advanced to Ph.D. candidacy at UCLA Physics."
+- date: "Oct 2021"
+  text: "Named a [**Julian Schwinger Fellow**](https://www.schwingerfellowship.pa.ucla.edu) at UCLA Physics (2021 – 2025), as I start my Ph.D."

@@ -1,0 +1,51 @@
+# ------------------------------------------------------------
+# Selected publications — shown on the homepage, in the order listed.
+#   abbr:    short badge (journal / status)
+#   title:   paper title
+#   authors: author list ("K.-Y. Wey" is highlighted automatically)
+#   venue:   journal, volume, year — or status
+#   note:    a few words on what the paper is about
+#   url:     optional link (DOI / arXiv); shown as a button
+#   link:    optional button label (default "DOI")
+#   selected: false keeps an entry off the homepage (it still appears in the CV)
+# ------------------------------------------------------------
+- abbr: "In prep"
+  title: "Visualizing electric field-induced deformation and depinning of a charge density wave at the atomic scale"
+  authors: "K.-Y. Wey, M. Mandigo-Stoba, W. T. Laderer, A. Nguyen, C. Jozwiak, A. Bostwick, E. Rotenberg, A. N. Alexandrova, S. E. Brown, and C. Gutiérrez"
+  venue: "Manuscript in preparation (arXiv, 2026)"
+  note: "Atomic-scale STM imaging of a quasi-1D charge density wave as an in-plane electric field deforms and depins it."
+
+- abbr: "In prep"
+  title: "Short-range order of alkali ions on the surface of a charge-density wave system"
+  authors: "K.-Y. Wey, M. Mandigo-Stoba, S. E. Brown, and C. Gutiérrez"
+  venue: "Manuscript in preparation (arXiv, 2027)"
+  note: "Alkali atoms deposited in situ, with their ordering resolved by simultaneous STM and qPlus AFM."
+
+- abbr: "In prep"
+  title: "Imaging strain-induced melting of a stripe crystal in a charge density wave system"
+  authors: "M. Mandigo-Stoba, A. Nguyen, K.-Y. Wey, L. Ni, H. P. Mak, S. Bañuelos, A. Enriquez-Ibarra, and C. Gutiérrez"
+  venue: "Manuscript in preparation"
+  note: "STM imaging of a stripe crystal melting under applied strain."
+  selected: false
+
+- abbr: "In prep"
+  title: "Combined atomic scanning probe and photoemission investigation of triangular lattice magnet EuAg₄Sb₂"
+  authors: "A. Nguyen, M. Mandigo-Stoba, W. T. Laderer, K.-Y. Wey, J. Green, C. Jozwiak, A. Bostwick, E. Rotenberg, and C. Gutiérrez"
+  venue: "Manuscript in preparation"
+  note: "STM and ARPES, combined, on a triangular-lattice magnet."
+  selected: false
+
+- abbr: "PRB"
+  title: "Mapping the three-dimensional fermiology of the triangular lattice magnet EuAg₄Sb₂"
+  authors: "J. Green, H. W. T. Morgan, M. Mandigo-Stoba, W. T. Laderer, K.-Y. Wey, et al."
+  venue: "Physical Review B 111, 085139 (2025)"
+  note: "ARPES mapping of the full 3D Fermi surface of a triangular-lattice magnet."
+  url: "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.111.085139"
+
+- abbr: "arXiv"
+  title: "PyAtoms: An interactive tool for simulating atomic STM images of 2D materials, moiré systems and superlattices"
+  authors: "A. G. Prado, M. Mandigo-Stoba, K.-Y. Wey, et al."
+  venue: "arXiv:2412.18332 (2024)"
+  note: "Open-source interactive simulator for atomic-resolution STM images."
+  url: "https://arxiv.org/abs/2412.18332"
+  link: "arXiv"

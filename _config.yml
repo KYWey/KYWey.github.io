@@ -1,0 +1,61 @@
+title: "Kuan-Yu Wey"
+author: "Kuan-Yu Wey"
+description: "Physics PhD candidate · University of California, Los Angeles"
+permalink: /:title/
+lang: "en"
+excerpt_separator: "\n\n\n"
+date_format: "%B %d, %Y"
+
+# Layout
+
+# show_social: true               # show title description and social links in the footer 
+show_excerpts: false             # show article excerpts instead of archive list on the home page
+show_frame: false               # display a grey frame on large screens
+show_sidebar: false            # show a sidebar instead of the usual header
+show_minimal: false             # remove all clutter
+show_social: true  
+
+
+# Menu                          # for available icons see https://fontawesome.com/v5/icons/
+
+navigation:                     # top bar, left to right — accepts {title, url}
+  - {title: "About", url: "/"}
+  - {title: "Research", url: "/research/"}
+  - {title: "Fun Life", url: "/fun/"}
+  - {title: "CV", url: "/cv/"}
+  - {title: "QMDS Lab", url: "https://sites.google.com/g.ucla.edu/quantum/"}
+
+external:                       # icon links (top bar + footer) — accepts {title, url, icon}
+  - {title: Mail, icon: envelope, url: "mailto:wesleywey0717@g.ucla.edu"}
+  - {title: Github, icon: github, url: "https://github.com/KYWey"}
+  - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/kuan-yu-wey-7062b6305/"}
+
+comments:
+#  disqus_shortname: ""         # see https://disqus.com
+#  isso_domain: ""              # see https://isso-comments.de
+
+plugins:
+ - jekyll-feed
+
+# Collections
+collections:
+  physics:
+    output: true
+    permalink: /fun/physics/:name/
+  lab:
+    output: true
+    permalink: /research/lab/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: physics
+    values:
+      layout: physics
+      mathjax: true
+  - scope:
+      path: ""
+      type: lab
+    values:
+      layout: lab
+      mathjax: true

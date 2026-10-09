@@ -1,0 +1,13 @@
+# ------------------------------------------------------------
+# Photo captions — optional. Keyed by file name (any gallery folder).
+# A photo without an entry here is simply shown without a caption.
+# ------------------------------------------------------------
+Gold_Sputter.JPG: "Ar⁺ sputtering in the STM preparation chamber: the ion beam (blue glow) cleans a gold crystal before it goes into the microscope."
+ARPES_Maestro_BB_PCB.JPG: "A blue bronze crystal wired to a multi-contact sample board in the MAESTRO endstation (Advanced Light Source), ready for ARPES under an in-plane electric field."
+ARPES_Merlin.JPG: "Beamtime at MERLIN (ALS beamline 4.0.3): finding the samples on the live camera view before a scan."
+STM25_PresentPhoto.JPG: "Presenting current-tuned STM/STS on a charge density wave at the IBS Conference on STM '25 (Seoul, June 2025)."
+Gold_STM_image.png: "Atomic-resolution STM image of a gold surface, Au(111). The bright stripes are its herringbone reconstruction."
+Tuning_Fork.jpg: "Commercial quartz tuning forks under an optical microscope — the starting point for a home-built qPlus sensor."
+qPlus_stage.jpg: "A home-built qPlus sensor: a quartz tuning fork glued and wired onto its holder."
+regular_tip.jpg: "For comparison, a regular STM tip: a sharpened metal wire in its holder."
+STM_Optical_Access.png: "Top: the STM tip, seen through the optical access, landing on a blue bronze (K₀.₃MoO₃) crystal. Bottom: the surface, its charge density wave, and the wave's phase, with two dislocations circled."

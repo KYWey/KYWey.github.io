@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+
+{% include head.html %}
+
+<header class="topbar">
+  <a class="brand" href="{{ "/" | relative_url }}">Kuan-Yu Wey</a>
+  <nav>
+    {%- for item in site.navigation -%}
+      {%- assign prefix = page.url | slice: 0, item.url.size -%}
+      {%- assign current = false -%}
+      {%- if item.url == "/" -%}
+        {%- if page.url == "/" -%}{%- assign current = true -%}{%- endif -%}
+      {%- elsif prefix == item.url -%}
+        {%- assign current = true -%}
+      {%- endif -%}
+      <a href="{{ item.url | relative_url }}"{% if item.url contains "://" %} target="_blank" rel="noopener"{% endif %}{% if current %} class="selected" aria-current="page"{% endif %}>{{ item.title }}</a>
+    {%- endfor -%}
+  </nav>
+</header>
+
+{{ content }}
+
+<footer class="site-footer">
+  {% include social.html %}
+  <p>© {{ site.time | date: "%Y" }} {{ site.author }} · {{ site.description }}</p>
+</footer>
+
+</html>

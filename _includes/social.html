@@ -1,0 +1,7 @@
+<div class="social-icons">
+  {%- for item in site.external -%}
+  <a href="{{ item.url }}"{% if item.url contains "://" %} target="_blank" rel="noopener"{% endif %} title="{{ item.title }}" aria-label="{{ item.title }}">
+    <svg aria-hidden="true" width="1em" height="1em"><use xlink:href="{{ "/assets/fontawesome/icons.svg" | relative_url }}#{{ item.icon }}"></use></svg>
+  </a>
+  {%- endfor -%}
+</div>
