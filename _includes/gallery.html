@@ -4,7 +4,8 @@
   Every image/video dropped into that folder shows up here automatically.
   Renders nothing while the folder is empty. Optional heading="..." adds a section
   title that only appears once there is media to show.
-  Optional layout="row" puts the photos side by side at one shared height (widths differ).
+  Optional layout="row" puts the photos side by side at one shared height (widths differ),
+  filling the page width; width="30em" caps the row's width (use it for one or two photos).
   Captions are optional: add "File_Name.jpg: caption" to _data/captions.yml.
 {%- endcomment -%}
 {%- assign img_exts = "jpg jpeg png gif webp avif svg" | split: " " -%}
@@ -19,12 +20,18 @@
 {%- if include.heading %}
 <h2 class="section-title">{{ include.heading }}</h2>
 {% endif -%}
-<div class="{% if include.layout == 'row' %}photo-row{% else %}photo-grid{% if count < 3 %} photo-grid-{{ count }}{% endif %}{% endif %}">
+<div {% if include.width %}style="max-width: {{ include.width }}" {% endif %}class="{% if include.layout == 'row' %}photo-row{% else %}photo-grid{% if count < 3 %} photo-grid-{{ count }}{% endif %}{% endif %}">
 {%- for f in media -%}
   {%- assign e = f.extname | remove: "." | downcase -%}
   {%- if img_exts contains e -%}
     {%- assign cap = site.data.captions[f.name] -%}
-    {%- if cap -%}
+    {%- if include.layout == 'row' -%}
+    {%- comment -%} each figure's share of the row = its photo's aspect ratio, so all heights match {%- endcomment -%}
+    <figure>
+      <img src="{{ f.path | relative_url }}" alt="{{ cap | default: f.basename | escape }}" loading="lazy" onload="this.parentNode.style.flexGrow=this.naturalWidth/this.naturalHeight">
+      {% if cap %}<figcaption>{{ cap }}</figcaption>{% endif %}
+    </figure>
+    {%- elsif cap -%}
     <figure>
       <img src="{{ f.path | relative_url }}" alt="{{ cap | escape }}" loading="lazy">
       <figcaption>{{ cap }}</figcaption>

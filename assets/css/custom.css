@@ -249,15 +249,31 @@ a.card:hover .card-more { color: var(--accent-2); }
 .photo-grid figure { break-inside: avoid; margin: 0 0 .8em; }
 .photo-grid figure img { margin: 0; }
 .photo-grid figcaption { color: var(--muted); font-size: .88em; line-height: 1.45; margin: .5em .2em 0; text-align: left; }
-/* photos side by side at one shared height; each caption wraps to its photo's width */
-.photo-row { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: .8em; margin: 1.2em 0; }
-.photo-row figure { display: table; margin: 0; }
+/* photos side by side at one shared height, together filling the row's width.
+   gallery.html sets each figure's flex-grow to its photo's aspect ratio. */
+.photo-row { display: flex; align-items: flex-start; gap: .6em; margin: 1.2em auto; }
+.photo-row figure { flex: 1 1 0; min-width: 0; margin: 0; }
 .photo-row img,
-.photo-row video { display: block; height: 22em; width: auto; max-width: 100%; border-radius: 12px; box-shadow: var(--shadow); background: #000; }
-.photo-row figcaption { display: table-caption; caption-side: bottom; color: var(--muted); font-size: .88em; line-height: 1.45; padding: .5em .2em 0; text-align: left; }
-@media (max-width: 46em) {
-  .photo-row img, .photo-row video { height: auto; width: 100%; }
+.photo-row video { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); background: #000; }
+.photo-row figcaption { color: var(--muted); font-size: .88em; line-height: 1.45; padding: .5em .2em 0; text-align: left; }
+@media (max-width: 40em) {
+  .photo-row { flex-direction: column; align-items: center; }
+  .photo-row figure { flex: none; width: 100%; max-width: 24em; }
 }
+
+/* Research → a project: text beside its photo */
+.project { display: grid; grid-template-columns: 1fr 21em; gap: 1.6em; align-items: start; margin: 1.2em 0 2em; }
+.project h3 { margin-top: 0; }
+.project figure { margin: .3em 0 0; }
+.project img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); }
+.project figcaption { color: var(--muted); font-size: .88em; line-height: 1.45; padding: .5em .2em 0; text-align: left; }
+@media (max-width: 52em) {
+  .project { grid-template-columns: 1fr; gap: .6em; }
+  .project figure { max-width: 26em; margin: 0 auto; }
+}
+.subsection-title { font-size: 1.15em; margin: 1.8em 0 .5em; }
+.ref-list { padding-left: 1.2em; }
+.ref-list li { margin: 0 0 .5em; }
 
 /* Research → STM: sputtering | gold image | stacked pair, all the same height.
    The first two are cropped narrower (object-fit) so the stacked pair gets more room;

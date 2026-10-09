@@ -9,10 +9,11 @@ new photos or videos in and they appear on the site automatically (no code chang
 | `pet-life/` | Pet Life (Cooby) — `/fun/pets/` |
 | `sport-life/` | Sport Life (table tennis, climbing, hiking) — `/fun/sports/` |
 | `Wine/` | Wine — `/fun/wine/` |
-| `research/stm/` | Research → STM section — `/research/` |
+| `research/stm/` | Research → STM section — `/research/` (hand-arranged in `Instrument_intro.md`; new files need adding there) |
 | `research/arpes/` | Research → ARPES section — `/research/` |
-| `research/overview/` | Research → "What I'm working on" — `/research/` |
-| `research/qPlus/` | Research → "Current work: home-built qPlus AFM sensors" — `/research/` |
+| `research/overview/` | Research → "What I'm working on" — `/research/` (one photo per project, hand-placed in `Instrument_intro.md`) |
+| `research/qPlus/` | Research → Current work → qPlus AFM sensors — `/research/` |
+| `research/Deposition_Gun/` | Research → Current work → Deposition gun — `/research/` |
 
 Two single photos are picked up by name: `main_page.*` (homepage portrait) and
 `research/research_page.*` (top of the Research page). Full-resolution originals of those two
