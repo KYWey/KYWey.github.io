@@ -262,14 +262,12 @@ a.card:hover .card-more { color: var(--accent-2); }
 }
 
 /* Research → a project: text beside its photo */
-.project { display: grid; grid-template-columns: 1fr 21em; gap: 1.6em; align-items: start; margin: 1.2em 0 2em; }
+.project { display: grid; grid-template-columns: 1fr 31em; gap: 1.6em; align-items: start; margin: 1.2em 0 2em; }
 .project h3 { margin-top: 0; }
-.project figure { margin: .3em 0 0; }
-.project img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow); }
-.project figcaption { color: var(--muted); font-size: .88em; line-height: 1.45; padding: .5em .2em 0; text-align: left; }
-@media (max-width: 52em) {
+.project .photo-row { margin: .3em 0 0; }
+@media (max-width: 62em) {
   .project { grid-template-columns: 1fr; gap: .6em; }
-  .project figure { max-width: 26em; margin: 0 auto; }
+  .project .photo-row { max-width: 34em; margin: 0 auto; }
 }
 .subsection-title { font-size: 1.15em; margin: 1.8em 0 .5em; }
 .ref-list { padding-left: 1.2em; }

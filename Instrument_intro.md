@@ -101,32 +101,45 @@ most of the thesis.</p>
 
 I run a controlled electrical current straight through the sample and use STM to watch, atom by
 atom, how the electronic order **shifts, slides, and responds** — while ARPES tells me how the
-underlying electronic bands are set up. The goal is to understand how you might *tune* and
-*control* these quantum states, not just observe them. In more technical words: probing the
-atomic-scale dynamics of a quasi-1D charge density wave by in-plane, current-tuned scanning
-tunneling microscopy and spectroscopy (STM/STS).
+underlying electronic bands are set up. The STM image on the right shows the material, blue
+bronze: its crystal lattice, and the CDW that emerges on top of it at low temperature. The goal
+is to understand how you might *tune* and *control* these quantum states, not just observe them.
+In more technical words: probing the atomic-scale dynamics of a quasi-1D charge density wave by
+in-plane, current-tuned scanning tunneling microscopy and spectroscopy (STM/STS).
   </div>
-  <figure>
-    <img src="{{ '/Photos/research/overview/STM25_PresentPhoto.JPG' | relative_url }}" alt="Talk at the IBS Conference on STM '25" loading="lazy">
-    <figcaption>{{ site.data.captions["STM25_PresentPhoto.JPG"] }}</figcaption>
-  </figure>
+  <div class="photo-row">
+    <figure>
+      <img src="{{ '/Photos/research/overview/Schematic_for_2025_conference.png' | relative_url }}" alt="STM image of blue bronze showing its lattice and charge density wave" loading="lazy" onload="this.parentNode.style.flexGrow=this.naturalWidth/this.naturalHeight">
+      <figcaption>{{ site.data.captions["Schematic_for_2025_conference.png"] }}</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ '/Photos/research/overview/STM25_PresentPhoto.JPG' | relative_url }}" alt="Talk at the IBS Conference on STM '25" loading="lazy" onload="this.parentNode.style.flexGrow=this.naturalWidth/this.naturalHeight">
+      <figcaption>{{ site.data.captions["STM25_PresentPhoto.JPG"] }}</figcaption>
+    </figure>
+  </div>
 </div>
 
 <div class="project">
   <div markdown="1">
 ### Short-range order of alkali ions on a charge density wave surface
 
-The surface of a CDW material is not just the wave. Alkali ions sitting on it — left there when
-the crystal is cleaved, or deposited afterwards — don't line up into a perfect lattice, yet they
-aren't random either: each ion keeps a regular arrangement with its neighbours that fades out over
-longer distances. That is **short-range order**. I deposit alkali atoms *in situ* and map how they
-arrange using STM and qPlus AFM at the same time, to learn how the ions and the charge density
-wave underneath influence each other.
+While measuring blue bronze, we observed an unexpected pattern on its surface, called
+**short-range order (SRO)** (see the STM image on the right). We hypothesize that it comes from
+potassium atoms on the surface, frozen in place at low temperature when we cleave the sample
+inside the microscope. The next step is to deposit alkali atoms deliberately and map how they
+arrange, using STM and qPlus AFM (see below) at the same time, to learn how the ions and the
+charge density wave underneath influence each other.
   </div>
-  <figure>
-    <img src="{{ '/Photos/research/overview/2024_MarchMeeting.JPG' | relative_url }}" alt="Talk at the 2024 APS March Meeting" loading="lazy">
-    <figcaption>{{ site.data.captions["2024_MarchMeeting.JPG"] }}</figcaption>
-  </figure>
+  <div class="photo-row">
+    <figure>
+      <img src="{{ '/Photos/research/overview/Schematic_for_2024_conference.png' | relative_url }}" alt="STM image of short-range order on the blue bronze surface" loading="lazy" onload="this.parentNode.style.flexGrow=this.naturalWidth/this.naturalHeight">
+      <figcaption>{{ site.data.captions["Schematic_for_2024_conference.png"] }}</figcaption>
+    </figure>
+    <figure>
+      <img src="{{ '/Photos/research/overview/2024_MarchMeeting.JPG' | relative_url }}" alt="Talk at the 2024 APS March Meeting" loading="lazy" onload="this.parentNode.style.flexGrow=this.naturalWidth/this.naturalHeight">
+      <figcaption>{{ site.data.captions["2024_MarchMeeting.JPG"] }}</figcaption>
+    </figure>
+  </div>
 </div>
 
 <h2 class="section-title">Current work</h2>
@@ -149,12 +162,13 @@ arrange themselves.</p>
 
 <h3 class="subsection-title">2. Deposition gun</h3>
 
-<p>To put atoms onto a surface on purpose, I added a deposition source — a "gun" — to the
-microscope's preparation chamber. Passing a current through the source releases a gentle,
-controllable stream of alkali atoms (potassium, here) onto a clean sample, without ever breaking
-vacuum. It is what makes the short-range-order experiments above possible.</p>
+<p>To put atoms onto a surface on purpose, we added a deposition gun to a chamber connected to
+the microscope. Passing a current through the source releases a gentle, controllable stream of
+alkali atoms (potassium, here) onto a clean sample, without ever breaking vacuum. Besides
+depositing potassium onto blue bronze, we are also interested in the adatom-induced Kekulé
+distortion in graphite and graphene devices.</p>
 
-{% include gallery.html folder="/Photos/research/Deposition_Gun" layout="row" width="32em" %}
+{% include gallery.html folder="/Photos/research/Deposition_Gun" layout="row" width="46em" %}
 
 <h3 class="subsection-title">3. Autonomous SPM</h3>
 
